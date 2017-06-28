@@ -1,0 +1,152 @@
+@import "compass/css3";
+
+.tag {
+  color: #eee;
+  margin-right: 1em;
+  padding: 0.5em;
+  border-radius: 1em;
+}
+.tag-sm {
+  color: #eee;
+  margin-right: 0.5em;
+  padding: 0.2em 1em;
+  border-radius: 1em;
+}
+.tag-group {
+  margin: 1em 0;
+}
+.tag-title {
+  display: block;
+  font-size: 16px;
+  font-weight: bold;
+  margin-bottom: 0.2em;
+}
+.tag-transparent{
+  padding: 0.3em 0.6em;
+  border-radius: 4px;
+  text-decoration: none;
+  font-size: 12px;
+  border: 1px solid #eee;
+  background: transparent;
+}
+.tag-size {
+  background-color: #8E44AD;
+}
+.tag-picture {
+  background-color: #2f353b;
+}
+.tag-picture2 {
+  background-color: #40c06b;
+}
+.tag-picture3 {
+  background-color: #616060;
+}
+.tag-time {
+  background-color: #67809F;
+}
+.tag-type {
+  background-color: #c96925;
+}
+.tag-cloud {
+  background-color: #00aced;
+}
+.tag-download {
+  border-radius: 4px;
+  background-color: #3598dc;
+  color: #efe;
+}
+.tag-magnet {
+  border-radius: 4px;
+  background-color: #c49f47;
+  color: #efe;
+}
+.project-thumb.hover-element > a {
+  height: 20em;
+}
+.input-radio--innerlabel {
+  width: auto;
+  height: 1.8em;
+  line-height: 1.8em;
+  padding: 0 0.4em;
+}
+.jumbotron {
+  margin-bottom: 1.5em;
+  margin-top: 1.5em;
+}
+.typebox dl dd a {
+  color: #eee;
+}
+.typebox dl:not(:last-child) {
+  margin-bottom: .6em;
+  line-height: 1.8em;
+  height: 1.8em;
+  color: #eee;
+}
+.typebox dl:last-child {
+  margin-bottom: 0em;
+  line-height: 1.8em;
+  height: 1.8em;
+  color: #eee;
+}
+.typebox dl dt {
+  float: left;
+  line-height: 1.8em;
+  height: 1.8em;
+  padding-right: 10px;
+}
+.typebox dl dd {
+  height: 2em;
+  line-height: 2em;
+}
+.prel {
+  overflow: hidden;
+}
+.border-1px {
+  border: 1px solid #3f3f3f;
+}
+.border-2px {
+  border: 2px solid rgba(245, 245, 245, 0.6);
+}
+
+/*detail*/
+#synopsis {
+  max-height: 32em;
+  overflow: hidden;
+}
+.detail-info span {
+  font-size: 1.4em;
+  display: block;
+  margin-bottom: 1em;
+}
+.bottom-info {
+  margin-top: 1em;
+}
+.picture-container {
+  margin: 2em 0;
+}
+.picture-title {
+  padding: 0.5em;
+}
+.border-bottom-1px {
+  margin-bottom: 2em;
+  padding-bottom: 2em;
+  border-bottom: 1px solid #444;
+}
+.torrent-title {
+
+  padding: 0.6em 0;
+  display: block;
+  font-size: 1.1em;
+}
+.tiny-title {
+  color:#8e6560!important;
+  display: block;
+  margin-bottom: .5em;
+}
+.information-text span{
+  color:#7d7086!important;
+}
+.blue-link {
+  color: #3f96ec;
+}
+

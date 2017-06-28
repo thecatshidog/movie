@@ -1,0 +1,45 @@
+/*! Place your custom styles here */
+a:hover {
+  text-decoration: none;
+}
+a {
+  font-weight: normal;
+}
+.bg--dark {
+  background: #1d1d1d;
+}
+
+.cover-pic {
+  max-height: 165px;
+}
+.label {
+  font-size: 12px;
+}
+.process-3 li .process__number {
+  width: 2em;
+  height: 2em;
+}
+.process-3 li .process__number span {
+  font-size: 1.2em;
+  top:0;
+}
+.process-3:before {
+  border-left:none ;
+}
+.process-3 li:not(:last-child) {
+  margin-bottom: 0;
+}
+.blog-article-wide:not(:last-child) {
+  margin-bottom: 2em;
+  padding-bottom: 2em;
+}
+.list-title {
+  margin-bottom: 0.5em;
+  padding-bottom: 0.5em;
+  border-bottom:1px solid #666;
+}
+/*list page*/
+.list-title {
+  font-weight: bold;
+}
+

@@ -1,0 +1,102 @@
+/*pagination*/
+ul.tsc_pagination {
+  margin: 25px 0;
+  padding: 0;
+  height: 100%;
+  overflow: hidden;
+  font-size: 14px;
+  list-style-type: none;
+  display: inline-block
+}
+
+ul.tsc_pagination li {
+  display: inline-block;
+  margin: 0;
+  padding: 0;
+  margin-left: 5px
+}
+
+ul.tsc_pagination .prev {
+  border-radius: 3px;
+  -moz-border-radius: 3px;
+  -webkit-border-radius: 3px;
+  font-weight: bold;
+  transition: all .2s ease-in-out;
+  -webkit-transition: all .2s ease-in-out;
+  -moz-transition: all .2s ease-in-out;
+  background: url(http://image.bt0.com/assets/global/img/arw_l.gif) center center no-repeat;
+}
+ul.tsc_pagination .prev:hover {
+  background:#00a0d1 url(http://image.bt0.com/assets/global/img/arw_l.gif) center center no-repeat !important;
+}
+ul.tsc_pagination .next {
+  border-radius: 3px;
+  -moz-border-radius: 3px;
+  -webkit-border-radius: 3px;
+  font-weight: bold;
+  transition: all .2s ease-in-out;
+  -webkit-transition: all .2s ease-in-out;
+  -moz-transition: all .2s ease-in-out;
+  background: url(http://image.bt0.com/assets/global/img/arw_r.gif) center center no-repeat;
+}
+ul.tsc_pagination .next:hover {
+  background:#00a0d1 url(http://image.bt0.com/assets/global/img/arw_r.gif) center center no-repeat !important;
+}
+ul.tsc_pagination .active .current{
+  color: #fff;
+  background: #00a0d1;
+  border-color: #0a6aa1;
+  display: block;
+  text-decoration: none;
+  padding: 10px 13px !important;
+  border-radius: 3px;
+  -moz-border-radius: 3px;
+  -webkit-border-radius: 3px;
+  font-weight: bold;
+  transition: all .2s ease-in-out;
+  -webkit-transition: all .2s ease-in-out;
+  -moz-transition: all .2s ease-in-out;
+}
+
+ul.tsc_pagination li:first-child {
+  margin-left: 0
+}
+
+ul.tsc_pagination li a,.pagination-bordered {
+  color: black;
+  display: block;
+  text-decoration: none;
+  padding: 10px 13px !important
+}
+
+ul.tsc_paginationA li a,.pagination-bordered {
+  color: #fff;
+  border-radius: 3px;
+  -moz-border-radius: 3px;
+  -webkit-border-radius: 3px;
+  font-weight: bold;
+  transition: all .2s ease-in-out;
+  -webkit-transition: all .2s ease-in-out;
+  -moz-transition: all .2s ease-in-out
+}
+
+ul.tsc_paginationA06 li a,.pagination-bordered {
+  border: 1px solid #333
+}
+
+.non-touch ul.tsc_paginationA06 li a:hover,ul.tsc_paginationA06 li a.current {
+  color: #fff;
+  background: #5da93c;
+  border-color: #5da93c
+}
+
+ul.tsc_paginationA06 li.unavailable {
+  padding: 10px 13px !important;
+  color: #fff;
+  border-radius: 3px;
+  border: 1px solid #333;
+  -moz-border-radius: 3px;
+  -webkit-border-radius: 3px;
+  font-weight: bold;
+  cursor: default
+}
