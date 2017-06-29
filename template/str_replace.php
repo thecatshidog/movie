@@ -1,0 +1,21 @@
+if ($siteArray[$x] = 'qq') {
+$siteArray[$x] = "腾讯视频";
+}elseif ($siteArray[$x] = 'sohu') {
+$siteArray[$x] = "搜狐视频";
+}elseif ($siteArray[$x] = 'youku') {
+$siteArray[$x] = "优酷视频";
+}elseif ($siteArray[$x] = 'imgo') {
+$siteArray[$x] = "芒果TV";
+}elseif ($siteArray[$x] = 'tudou') {
+$siteArray[$x] = "土豆视频";
+}elseif ($siteArray[$x] = 'levp') {
+$siteArray[$x] = "乐视视频";
+}elseif ($siteArray[$x] = 'pptv') {
+$siteArray[$x] = "PPTV";
+}elseif ($siteArray[$x] = 'bilibli') {
+$siteArray[$x] = "哔哩哔哩";
+}elseif ($siteArray[$x] = 'fengxing') {
+$siteArray[$x] = "风行视频";
+}elseif ($siteArray[$x] = 'xunlei') {
+$siteArray[$x] = "看看视频";
+}
