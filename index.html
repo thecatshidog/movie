@@ -94,27 +94,44 @@
 
     </nav>
 </div>
-<div class="background-overlay hidden-xs hidden-sm"></div>
+
+
 <div class="main-container">
-    <section class="imagebg  bg--dark" style="padding-bottom: 0">
-        <div class="background-image-holder  hidden-xs hidden-sm" style="background: url(http://image.bt0.com/background/background21.jpg); opacity: 1;height:700px">
-            <img alt="background" src="http://image.bt0.com/background/background21.jpg">
-        </div>
+    <section class="imagebg  bg--dark" style="padding-bottom: 2em">
+
         <div class="container">
             <div class="row">
-                <div class="text-center hidden-xs hidden-sm" style="margin: 8em  0">
-                    <h1>不太灵 - 优雅的影视站</h1>
+                <div class="col-sm-12 text-center" style="margin-top: 2em">
+                    <div class="masonry">
+                        <div class="row">
+                            <div class="masonry__container">
+                                <div class="masonry__item col-md-3 col-sm-6 col-xs-6">
+                                    <a href="/subject/24911.html" class="block text-block">
+                                        <figure class="collection">
+                                            <figcaption>
+                                                <img alt="豆瓣 Top 250" src="http://image.bt0.com/photo/1578714.jpg"/>
+                                                <h5>豆瓣 Top 250</h5>
+                                            </figcaption>
+                                        </figure>
+                                    </a>
+                                </div>
+                            </div>
+                            <!--end masonry container-->
+                        </div>
+                        <!--end of row-->
+                    </div>
+
                 </div>
 
             </div>
-
         </div>
+
         <div class="container">
             <div class="row">
-                <div class="col-sm-12 text-center">
+                <div class="col-sm-12 text-center" style="margin-top: 0.6em">
                     <div class="masonry masonry-demos">
                         <div class="masonry-filter-container text-center">
-                            <span>推荐观看:</span>
+                            <span>首页推荐:</span>
                             <div class="masonry-filter-holder">
                                 <div class="masonry__filters" data-filter-all-text="所有类别"></div>
                             </div>
@@ -755,64 +772,13 @@
             </div>
         </div>
     </section>
-    <section class="cover bg--dark height-40 text-center" style="position: relative;z-index: 9">
-        <div class="container pos-vertical-center">
-            <div class="row">
-                <div class="col-sm-12 col-md-8">
-                    <h4><i class="icon-Search-onCloud color--primary-1"></i> 种子资源搜索</h4>
-                    <div class="typed-headline" style="margin-bottom: 0">
-                        <span class="h1 inline-block">可以这样搜索</span>
-                        <span class="h1 inline-block typed-text typed-text--cursor color--primary" data-typed-strings="大话西游,A Chinese Odyssey,tt0114996,1292213"></span>
-                    </div>
-                    <div class="boxed boxed--lg bg--white text-left">
-                        <form class="form--horizontal" action="/e/search/" method="post" target="_blank">
-                            <div class="col-sm-8">
-                                <input type="search" name="keyboard" placeholder="种子搜索 支持 影片名/种子命/iMDb号/豆瓣号">
-                            </div>
-                            <div class="col-sm-4">
-                                <button type="submit" class="btn btn--primary type--uppercase">立即搜索</button>
-                            </div>
-                            <input type="hidden" name="show" value="title,btname,imdb,douban_id,mvtitle">
-                            <input type="hidden" name="tbname" value="torrent">
-                            <input type="hidden" name="tempid" value="3">
-                            <input type="hidden" name="orderby" value="onclick">
-                        </form>
-                    </div>
-                </div>
-            </div>
 
-        </div>
-
-    </section>
-    <section class="space--xs imagebg" style="background-color: #333;">
-        <div class="container">
-            <div class="row">
-                <div class="cta cta--horizontal text-center-xs">
-                    <div class="col-sm-4" style="color: #efe">
-                        <h4>反馈建议</h4>
-                    </div>
-                    <div class="col-sm-5">
-                        <p class="lead" style="color: #efe">
-                            加入不太灵官方群，与广大影迷交流
-                        </p>
-                    </div>
-                    <div class="col-sm-3 text-right text-center-xs">
-                        <a class="btn btn--primary-1 type--uppercase" target="_blank" href="//shang.qq.com/wpa/qunwpa?idkey=745dd0d0c5527f8ba1a58feb9dcb3697783282c636a3c5a46e674a6cc51700c4">
-<span class="btn__text">
-立即加入QQ群
-</span>
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <footer class="space--sm footer-2 bg--dark ">
+    <footer class="space--sm footer-2 bg--secondary">
         <div class="container">
             <div class="row">
                 <div class="col-sm-6">
-<span class="type--fine-print">&copy;
-<span class="update-year"></span> bt0.com</span>
+                    <span class="type--fine-print">&copy;
+                    <span class="update-year"></span> bt0.com</span>
                 </div>
                 <div class="col-sm-6 text-right text-left-xs">
                     <ul class="social-list list-inline list--hover">

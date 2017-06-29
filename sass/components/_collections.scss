@@ -1,0 +1,13 @@
+@import "compass/css3";
+
+figure.collection {
+  img {
+    margin-bottom: 0;
+    @include border-radius(4px);
+  }
+  h5 {
+    height: 4em;
+    margin-top: -4em;
+    background: rgba(3,3,3,0.4);
+  }
+}
