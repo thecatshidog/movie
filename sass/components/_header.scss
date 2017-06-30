@@ -19,6 +19,9 @@
 @media (min-width: 991px){
   .bar--transparent {
     background: rgba(51, 51, 51, 0.25);;
+
+  }
+  .border--bottom-1px {
     border-bottom: 1px solid rgba(102, 102, 102, 0.68);
   }
 }

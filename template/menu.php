@@ -20,7 +20,7 @@
         <!--end of container-->
     </div>
     <!--end bar-->
-    <nav class="bar bar-2 hidden-xs bar--absolute bar--transparent" id="menu2">
+    <nav class="bar bar-2 hidden-xs bar--absolute" id="menu2">
         <div class="container">
             <div class="row">
                 <div class="col-md-1 hidden-xs hidden-sm">
