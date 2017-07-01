@@ -4,7 +4,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-xs-3 col-sm-2">
-                    <a href="">
+                    <a href="/">
                         <img class="logo logo-dark" alt="logo" src="http://image.bt0.com/img/logo-dark.png"/>
                         <img class="logo logo-light" alt="logo" src="http://image.bt0.com/img/logo-light.png"/>
                     </a>
@@ -25,7 +25,7 @@
             <div class="row">
                 <div class="col-md-2 hidden-xs hidden-sm">
                     <div class="bar__module">
-                        <a href="">
+                        <a href="/">
                             <img class="logo logo-dark" alt="logo" src="http://image.bt0.com/img/logo-dark.png"/>
                             <img class="logo logo-light" alt="logo" src="http://image.bt0.com/img/logo-light.png"/>
                         </a>

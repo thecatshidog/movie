@@ -1,6 +1,6 @@
 if($r[score]!=='') {
 $listtemp='<div class="masonry__item col-md-3 col-sm-6 col-xs-6" data-masonry-filter="[!--this.classname--]">
-    <a href="/subject/[!--id--].html" class="block text-block">
+    <a href="/subject/[!--id--].html" target="_blank" class="block text-block">
         <figure class="effect-sadie">
                 <img alt="[!--title--]" src="[!--titlepic--]" />
             <figcaption>
@@ -17,7 +17,7 @@ $listtemp='<div class="masonry__item col-md-3 col-sm-6 col-xs-6" data-masonry-fi
 </div>';
 }else {
 $listtemp='<div class="masonry__item col-md-3 col-sm-6 col-xs-6" data-masonry-filter="[!--this.classname--]">
-    <a href="/subject/[!--id--].html" class="block text-block">
+    <a href="/subject/[!--id--].html" target="_blank" class="block text-block">
         <figure class="effect-sadie">
                 <img alt="[!--title--]" src="[!--titlepic--]" />
             <figcaption>
