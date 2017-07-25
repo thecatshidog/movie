@@ -22,10 +22,7 @@
                 <div class="col-sm-12">
                     <div class="typed-headline">
                         <span class="h1 inline-block">bt0.com — 不太灵影视</span>
-                        <span class="h1 inline-block typed-text typed-text--cursor color--primary"
-                              data-typed-strings="资源全面 设计优雅,全站无广告 无弹窗">
-                            追求极致
-                        </span>
+
                     </div>
                     <p class="lead">
                         追求极致 努力成为体验最好的影视站
