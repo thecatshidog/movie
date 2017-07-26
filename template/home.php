@@ -22,16 +22,13 @@
                 <div class="col-sm-12">
                     <div class="typed-headline">
                         <span class="h1 inline-block">bt0.com — 不太灵影视</span>
-                        <span class="h1 inline-block typed-text typed-text--cursor color--primary"
-                              data-typed-strings="资源全面 设计优雅,全站无广告 无弹窗">
-                            追求极致
-                        </span>
+           
                     </div>
                     <p class="lead">
-                        追求极致 努力成为体验最好的影视站
+                        影迷的一片净土
                     </p>
                     <a class="btn btn--primary type--uppercase" href="/film-download/">
-                                <span class="btn__text">
+                                <span class="btn__text" >
                                     开始探索
                                 </span>
                     </a>
@@ -61,6 +58,11 @@
 </div>
 <!--<div class="loader"></div>-->
 [!--temp.js--]
+<script>
+    $(document).ready(function () {
+        $("[class='text-center height-60 imagebg']").delay(2000).animate({height: "40vh"})
+    })
+</script>
 </body>
 
 

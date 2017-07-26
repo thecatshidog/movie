@@ -293,20 +293,12 @@ EOT;
                                                     }
                                                     ?><?=$mv[title]?></a></div>
 
-                                            <div class="col-md-3"><div class="tag-sm tag-size text-center"><?=$mv[size]?></div></div>
+                                            <div class="col-md-4"><div class="tag-sm tag-size text-center"><?=$mv[size]?></div></div>
 
-                                            <div class="col-md-3"><div class="tag-sm tag-picture3 text-center"><?=$mv[picture]?></div></div>
+                                            <div class="col-md-4"><div class="tag-sm tag-picture3 text-center"><?=$mv[picture]?></div></div>
 
-                                            <div class="col-md-3"><a href="<?=$mv[magnet]?>"><div class="tag-sm tag-magnet text-center">磁力链接</div></a></div>
-                                            <div class="col-md-3"><?php
-                                                if($mv[bt])
-                                                {
-                                                    ?>
-                                                    <a href="/download/<?=$mv[id]?>.html"><div class="tag-sm tag-download text-center">下载种子</div></a>
-
-                                                    <?php
-                                                }
-                                                ?></div>
+                                            <div class="col-md-4"><a href="<?=$mv[magnet]?>"><div class="tag-sm tag-magnet text-center">磁力链接</div></a></div>
+                                        
                                             <div class="col-md-12 border-bottom-1px"></div>
                                         </div>
 
@@ -333,20 +325,12 @@ EOT;
                                                     }
                                                     ?><?=$mv[title]?></a></div>
 
-                                            <div class="col-md-3"><div class="tag-sm tag-size text-center"><?=$mv[size]?></div></div>
+                                            <div class="col-md-4"><div class="tag-sm tag-size text-center"><?=$mv[size]?></div></div>
 
-                                            <div class="col-md-3"><div class="tag-sm tag-picture3 text-center"><?=$mv[picture]?></div></div>
+                                            <div class="col-md-4"><div class="tag-sm tag-picture3 text-center"><?=$mv[picture]?></div></div>
 
-                                            <div class="col-md-3"><a href="<?=$mv[magnet]?>"><div class="tag-sm tag-magnet text-center">磁力链接</div></a></div>
-                                            <div class="col-md-3"><?php
-                                                if($mv[bt])
-                                                {
-                                                    ?>
-                                                    <a href="/download/<?=$mv[id]?>.html"><div class="tag-sm tag-download text-center">下载种子</div></a>
-
-                                                    <?php
-                                                }
-                                                ?></div>
+                                            <div class="col-md-4"><a href="<?=$mv[magnet]?>"><div class="tag-sm tag-magnet text-center">磁力链接</div></a></div>
+                                         
                                             <div class="col-md-12 border-bottom-1px"></div>
                                         </div>
 
@@ -374,20 +358,12 @@ EOT;
                                                     }
                                                     ?><?=$mv[title]?></a></div>
 
-                                            <div class="col-md-3"><div class="tag-sm tag-size text-center"><?=$mv[size]?></div></div>
+                                            <div class="col-md-4"><div class="tag-sm tag-size text-center"><?=$mv[size]?></div></div>
 
-                                            <div class="col-md-3"><div class="tag-sm tag-picture3 text-center"><?=$mv[picture]?></div></div>
+                                            <div class="col-md-4"><div class="tag-sm tag-picture3 text-center"><?=$mv[picture]?></div></div>
 
-                                            <div class="col-md-3"><a href="<?=$mv[magnet]?>"><div class="tag-sm tag-magnet text-center">磁力链接</div></a></div>
-                                            <div class="col-md-3"><?php
-                                                if($mv[bt])
-                                                {
-                                                    ?>
-                                                    <a href="/download/<?=$mv[id]?>.html"><div class="tag-sm tag-download text-center">下载种子</div></a>
-
-                                                    <?php
-                                                }
-                                                ?></div>
+                                            <div class="col-md-4"><a href="<?=$mv[magnet]?>"><div class="tag-sm tag-magnet text-center">磁力链接</div></a></div>
+                                        
                                             <div class="col-md-12 border-bottom-1px"></div>
                                         </div>
 
@@ -415,20 +391,12 @@ EOT;
                                                     }
                                                     ?><?=$mv[title]?></a></div>
 
-                                            <div class="col-md-3"><div class="tag-sm tag-size text-center"><?=$mv[size]?></div></div>
+                                            <div class="col-md-4"><div class="tag-sm tag-size text-center"><?=$mv[size]?></div></div>
 
-                                            <div class="col-md-3"><div class="tag-sm tag-picture3 text-center"><?=$mv[picture]?></div></div>
+                                            <div class="col-md-4"><div class="tag-sm tag-picture3 text-center"><?=$mv[picture]?></div></div>
 
-                                            <div class="col-md-3"><a href="<?=$mv[magnet]?>"><div class="tag-sm tag-magnet text-center">磁力链接</div></a></div>
-                                            <div class="col-md-3"><?php
-                                                if($mv[bt])
-                                                {
-                                                    ?>
-                                                    <a href="/download/<?=$mv[id]?>.html"><div class="tag-sm tag-download text-center">下载种子</div></a>
-
-                                                    <?php
-                                                }
-                                                ?></div>
+                                            <div class="col-md-4"><a href="<?=$mv[magnet]?>"><div class="tag-sm tag-magnet text-center">磁力链接</div></a></div>
+                                       
                                             <div class="col-md-12 border-bottom-1px"></div>
                                         </div>
 
@@ -455,20 +423,12 @@ EOT;
                                                     }
                                                     ?><?=$mv[title]?></a></div>
 
-                                            <div class="col-md-3"><div class="tag-sm tag-size text-center"><?=$mv[size]?></div></div>
+                                            <div class="col-md-4"><div class="tag-sm tag-size text-center"><?=$mv[size]?></div></div>
 
-                                            <div class="col-md-3"><div class="tag-sm tag-picture3 text-center"><?=$mv[picture]?></div></div>
+                                            <div class="col-md-4"><div class="tag-sm tag-picture3 text-center"><?=$mv[picture]?></div></div>
 
-                                            <div class="col-md-3"><a href="<?=$mv[magnet]?>"><div class="tag-sm tag-magnet text-center">磁力链接</div></a></div>
-                                            <div class="col-md-3"><?php
-                                                if($mv[bt])
-                                                {
-                                                    ?>
-                                                    <a href="/download/<?=$mv[id]?>.html"><div class="tag-sm tag-download text-center">下载种子</div></a>
-
-                                                    <?php
-                                                }
-                                                ?></div>
+                                            <div class="col-md-4"><a href="<?=$mv[magnet]?>"><div class="tag-sm tag-magnet text-center">磁力链接</div></a></div>
+                                         
                                             <div class="col-md-12 border-bottom-1px"></div>
                                         </div>
 
@@ -625,27 +585,8 @@ EOT;
     <!--end of container-->
 </section>
 
-<section class="bg--dark" style="background:#1a151c;">
-    <div class="container">
-
-        <div id="cloud-tie-wrapper" class="cloud-tie-wrapper"></div>
-        <script src="https://img1.cache.netease.com/f2e/tie/yun/sdk/loader.js"></script>
-        <script>
-            var cloudTieConfig = {
-                url: document.location.href,
-                sourceId: "subject/[!--id--]",
-                productKey: "dd1dd5814e274c2684b557fde889a188",
-                target: "cloud-tie-wrapper"
-            };
-            var yunManualLoad = true;
-            Tie.loader("aHR0cHM6Ly9hcGkuZ2VudGllLjE2My5jb20vcGMvbGl2ZXNjcmlwdC5odG1s", true);
-        </script>
-
-
-    </div>
-</section>
 <!--关联影片区域-->
-[!--temp.qq--]
+
 [!--temp.foot--]
 
 </div>
