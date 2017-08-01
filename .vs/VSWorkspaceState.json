@@ -1,8 +1,10 @@
 {
   "ExpandedNodes": [
     "",
-    "\\template"
+    "\\css",
+    "\\sass",
+    "\\sass\\components"
   ],
-  "SelectedNode": "\\template\\tv-detail.php",
+  "SelectedNode": "\\sass\\components\\_button.scss",
   "PreviewInSolutionExplorer": false
 }

@@ -18,3 +18,20 @@
 <script src="http://bt0.com/js/jquery.steps.min.js"></script>
 <script src="http://bt0.com/js/smooth-scroll.min.js"></script>
 <script src="http://bt0.com/js/scriptsv1.js"></script>
+
+
+
+//v2
+<script src="//bt0.com/js/jquery-3.1.1.min.js"></script>
+<script src="//bt0.com/dist/bundle.min.js"></script>
+<script src="http://bt0.com/js/echo.min.js"></script>
+<script>
+ echo.init({
+      offset: 100,
+      throttle: 250,
+      unload: false,
+      callback: function (element, op) {
+        console.log(element, 'has been', op + 'ed')
+      }
+    });
+</script>
