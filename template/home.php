@@ -21,10 +21,10 @@
             <div class="row">
                 <div class="col-sm-12">
                     <div class="typed-headline">
-                        <span class="h1 inline-block">bt0.com — 不太灵影视</span>
+                        <span class="h1 inline-block">不太灵影视</span>
                     </div>
                     <p class="lead">
-                        影迷的一片净土
+                        某设计师的无聊之作
                     </p>
                     <a class="btn btn--primary type--uppercase" href="/film-download/">
                                 <span class="btn__text" >

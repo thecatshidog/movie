@@ -42,4 +42,13 @@ a {
 .list-title {
   font-weight: bold;
 }
-
+@media (min-width: 768px) {
+  img.lazy {
+    height: 360px
+  }
+}
+@media (max-width: 767px) {
+  img.lazy {
+    height: 256px
+  }
+}
