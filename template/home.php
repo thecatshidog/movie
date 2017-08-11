@@ -21,15 +21,10 @@
             <div class="row">
                 <div class="col-sm-12">
                     <div class="typed-headline">
-                        <span class="h1 inline-block">bt0.com — 不太灵影视</span>
-<<<<<<< HEAD
-           
-=======
-
->>>>>>> ee5f3cfc707e81f57db0efc7c58fd5793dab36c9
+                        <span class="h1 inline-block">不太灵影视</span>
                     </div>
                     <p class="lead">
-                        影迷的一片净土
+                        某设计师的无聊之作
                     </p>
                     <a class="btn btn--primary type--uppercase" href="/film-download/">
                                 <span class="btn__text" >
@@ -64,7 +59,7 @@
 [!--temp.js--]
 <script>
     $(document).ready(function () {
-        $("[class='text-center height-60 imagebg']").delay(2000).animate({height: "40vh"})
+        $("[class='text-center height-60 imagebg']").delay(2000).animate({height: "40vh",paddingBottom:"0.6em"})
     })
 </script>
 </body>

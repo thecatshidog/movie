@@ -80,8 +80,9 @@ ul.tsc_paginationA li a,.pagination-bordered {
   -moz-transition: all .2s ease-in-out
 }
 
-ul.tsc_paginationA06 li a,.pagination-bordered {
-  border: 1px solid #333
+ul.tsc_paginationA06 li a, .pagination-bordered {
+    border: 1px solid #252525;
+    background: #2c2c2c;
 }
 
 .non-touch ul.tsc_paginationA06 li a:hover,ul.tsc_paginationA06 li a.current {

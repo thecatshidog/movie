@@ -29,19 +29,9 @@
                     <span style="background-color: #8E44AD;color: #eee;margin-right: 1em;padding: 0.5em;border-radius: 1em;">[!--size--]</span>
                     <span style="background-color: #2f353b;color: #eee;margin-right: 1em;padding: 0.5em;border-radius: 1em;">[!--picture--]</span>
                     <span style="background-color: #67809F;color: #eee;margin-right: 1em;padding: 0.5em;border-radius: 1em;">[!--newstime--]</span>
-                    <a class="btn bg--googleplus" href="[!--magnet--]">
+                    <a class="btn" style="background: #c49f47" href="[!--magnet--]">
                         <span class="btn__text">磁力链接</span>
                     </a>
-                    <?php
-                    if($navinfor[bt])
-                    {
-                        ?>
-                        <a class="btn bg--primary" href="/download/[!--id--].html">
-                            <span class="btn__text">下载种子</span>
-                        </a>
-                        <?php
-                    }
-                    ?>
                 </div>
                 <div class="col-md-12">
 
@@ -137,22 +127,6 @@
         </div>
 
 
-    </section>
-    <section class="bg--dark">
-        <div class="container">
-            <div id="cloud-tie-wrapper" class="cloud-tie-wrapper"></div>
-            <script src="https://img1.cache.netease.com/f2e/tie/yun/sdk/loader.js"></script>
-            <script>
-                var cloudTieConfig = {
-                    url: document.location.href,
-                    sourceId: "torrent/[!--id--]",
-                    productKey: "dd1dd5814e274c2684b557fde889a188",
-                    target: "cloud-tie-wrapper"
-                };
-                var yunManualLoad = true;
-                Tie.loader("aHR0cHM6Ly9hcGkuZ2VudGllLjE2My5jb20vcGMvbGl2ZXNjcmlwdC5odG1s", true);
-            </script>
-        </div>
     </section>
 
     [!--temp.foot--]

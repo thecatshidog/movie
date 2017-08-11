@@ -2,7 +2,7 @@ if($r[score]!=='') {
 $listtemp='<div class="masonry__item col-md-3 col-sm-6 col-xs-6" data-masonry-filter="[!--this.classname--]">
     <a href="/mv/[!--id--].html" target="_blank" class="block text-block">
         <figure class="effect-sadie">
-                <img style="width: 100%" alt="[!--title--]" src="[!--titlepic--]" />
+                <img class="lazy" style="width: 100%" alt="[!--title--]" data-original="[!--titlepic--]" />
             <figcaption>
                 <h2>[!--title--]<br><span>[!--year--]</span></h2>
                 <p>又名: [!--ename--]<br>类型: [!--type--]<br>片长: [!--durations--]<br>上映地区: [!--area--]</p>
@@ -19,7 +19,7 @@ $listtemp='<div class="masonry__item col-md-3 col-sm-6 col-xs-6" data-masonry-fi
 $listtemp='<div class="masonry__item col-md-3 col-sm-6 col-xs-6" data-masonry-filter="[!--this.classname--]">
     <a href="/mv/[!--id--].html" target="_blank" class="block text-block">
         <figure class="effect-sadie">
-                <img style="width: 100%" alt="[!--title--]" src="[!--titlepic--]" />
+                <img class="lazy" style="width: 100%" alt="[!--title--]" data-original="[!--titlepic--]" />
             <figcaption>
                 <h2>[!--title--]<br><span>[!--year--]</span></h2>
                 <p>又名: [!--ename--]<br>类型: [!--type--]<br>片长: [!--durations--]<br>上映地区: [!--area--]</p>
