@@ -9,7 +9,7 @@ if($id<>0)
 	$r=$empire->fetch1("select bt from www_92game_net_ecms_torrent where id='$id' limit 1");
 	$bt=$r['bt'];
 
-		$usql=$empire->query("update www_92game_net_ecms_torrent set onclick=onclick+1 where id='$id' limit 1");
+	$usql=$empire->query("update www_92game_net_ecms_torrent set onclick=onclick+1 where id='$id' limit 1");
 }
 
 
@@ -19,3 +19,4 @@ db_close();
 $empire=null;
 
 ?>
+
