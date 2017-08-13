@@ -18,7 +18,7 @@
     <meta name="twitter:title" property="og:title" content="[!--pagetitle--]" />
     <meta name="twitter:description" property="og:description" content="[!--pagetitle--]在线观看 高清电影下载，字幕资源下载，精彩影评查看" />
     <meta name="twitter:image" property="og:image" content="[!--coverpic--]" />
-    <link rel="canonical" href="http://bt0.com/mv/[!--id--].html" />
+    <link rel="canonical" href="http://bttt.gq/mv/[!--id--].html" />
     [!--temp.css--]
 </head>
 <body>
@@ -151,7 +151,7 @@
 
                             <div class="masonry__item">
                                 <div>
-                                    <img style="border-radius:10px " alt="[!--title--]" src="http://image.bt0.com/photo/[!--douban_id--].jpg">
+                                    <img style="border-radius:10px " alt="[!--title--]" src="[!--titlepic--]">
                                 </div>
 
                             </div>
@@ -201,7 +201,7 @@
                     ?>
                 </div>
                 <div class="col-md-4">
-                    <span style="font-size: 2em;font-weight: 700;color:#907e91;margin-bottom: .5em;display: block">剧情:</span><article class="information-text">[!--summary--]</article>
+                    <span style="font-size: 2em;font-weight: 700;color:#907e91;margin-bottom: .5em;display: block">剧情:</span><article class="information-text">重新抓取中...</article>
                 </div>
             </div>
 

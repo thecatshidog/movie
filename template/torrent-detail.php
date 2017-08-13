@@ -38,7 +38,7 @@
                         <div class="row">
 
                                     <?
-                                    $cr=$empire->fetch1("select id,title,douban_id,year,score,summary from www_92game_net_ecms_movie where douban_id = '".$navinfor[douban_id]."'  limit 1");
+                                    $cr=$empire->fetch1("select id,title,douban_id,year,score,summary,titlepic from www_92game_net_ecms_movie where douban_id = '".$navinfor[douban_id]."'  limit 1");
                                     ?>
                             <div class="masonry masonry-demos col-md-4">
                                     <?php if ($cr) {
@@ -49,7 +49,7 @@
                                              <div class="masonry__item">
                                                  <a href="/subject/<?=$cr[id]?>.html" class="block text-block" target="_blank">
                                                      <div class="hover-shadow">
-                                                         <img alt="<?=$cr[title]?> (<?=$cr[year]?>" src="http://image.bt0.com/photo/<?=$cr[douban_id]?>.jpg">
+                                                         <img alt="<?=$cr[title]?> (<?=$cr[year]?>" src="<?=$cr[titlepic]?>.jpg">
                                                      </div>
                                                  </a>
                                              </div>
@@ -66,7 +66,7 @@
                                      <div class="masonry__item col-md-8 boxed" style="background: #1a151c;">
                                          <span style="font-size: 2em;font-weight: 700;color:#be997f;display: block;margin-bottom: .5em"><?=$cr[title]?></span>
                                          <span class="tiny-title">豆瓣评分: <span style="font-size: 2em;font-weight: 700;color:#fc9b35;"><?=$cr[score]?></span></span>
-                                         <article class="information-text"><?=$cr[summary]?></article>
+                                         <article class="information-text">重新抓取中...</article>
                                          <hr/>
                                 <div class="tinfo">
                                     <span class="tiny-title">种子文件信息:</span>

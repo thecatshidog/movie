@@ -1,0 +1,17 @@
+@import "compass/css3";
+
+.information-text {
+  max-height: 462px;
+  color: #b283b5;
+  overflow: hidden;
+}
+.tag-box {
+  display: inline-block;
+}
+.name-cast {
+  display: inline-block;
+  border: 1px solid #f0f0f0;
+  @include border-radius(2px);
+  padding: 0px 6px;
+  margin: 0 0 6px 0;
+}
