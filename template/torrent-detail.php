@@ -2,7 +2,7 @@
 <html lang="zh-cmn-Hans" class="ua-windows ua-webkit">
 
 <head>
-    <title>[!--pagetitle--] 资源下载 不太灵影视</title>
+    <title>[!--pagetitle--] 资源下载 bttt.gq</title>
     <meta name="description" content="[!--pagedes--]">
     [!--temp.css--]
 </head>
@@ -66,7 +66,15 @@
                                      <div class="masonry__item col-md-8 boxed" style="background: #1a151c;">
                                          <span style="font-size: 2em;font-weight: 700;color:#be997f;display: block;margin-bottom: .5em"><?=$cr[title]?></span>
                                          <span class="tiny-title">豆瓣评分: <span style="font-size: 2em;font-weight: 700;color:#fc9b35;"><?=$cr[score]?></span></span>
-                                         <article class="information-text">重新抓取中...</article>
+                                         <article class="information-text"> <?php
+                                             $summary=$empire->query("select summary from www_92game_net_ecms_addinfo  where douban_id = '".$navinfor[douban_id]."' ");
+                                             $r=$empire->fetch($summary);
+                                             if ($r) {
+                                                 echo $r[summary];
+                                             }else {
+                                                 echo "该影视条目暂无简介";
+                                             }
+                                             ?></article>
                                          <hr/>
                                 <div class="tinfo">
                                     <span class="tiny-title">种子文件信息:</span>

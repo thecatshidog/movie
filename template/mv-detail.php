@@ -12,12 +12,12 @@
     <meta property="og:type" content="video"/>
     <meta property="og:title"content="[!--pagetitle--]"/>
     <meta property="og:image" content="[!--coverpic--]"/>
-    <meta property="og:url" content="http://bt0.com/subject/[!--id--].html"/>
+    <meta property="og:url" content="http://bttt.gq/subject/[!--id--].html"/>
     <meta name="twitter:card" content="summary" />
-    <meta name="twitter:url" property="og:url" content="http://bt0.com/subject/[!--id--].html" />
+    <meta name="twitter:url" property="og:url" content="http://bttt.gq/subject/[!--id--].html" />
     <meta name="twitter:title" property="og:title" content="[!--pagetitle--]" />
     <meta name="twitter:description" property="og:description" content="[!--pagetitle--]在线观看 高清电影下载，字幕资源下载，精彩影评查看" />
-    <meta name="twitter:image" property="og:image" content="[!--coverpic--]" />
+    <meta name="twitter:image" property="og:image" content="[!--titlepic--]" />
     <link rel="canonical" href="http://bttt.gq/mv/[!--id--].html" />
     [!--temp.css--]
 </head>
@@ -161,7 +161,19 @@
                 </div>
                 <div class="col-md-4" style="margin-bottom:2em">
                     <span style="font-size: 2em;font-weight: 700;color:#be997f;display: block;margin-bottom: .5em">[!--title--]</span>
-                    <span class="tiny-title">豆瓣评分: <span style="font-size: 2em;font-weight: 700;color:#fc9b35;">[!--score--]</span></span>
+                    <div class="modal-instance">
+                        <a class="modal-trigger" href="#" data-modal-index="2">
+                            <span class="tiny-title">豆瓣评分: <span style="font-size: 2em;font-weight: 700;color:#fc9b35;" >[!--score--]</span></span>
+                        </a>
+                        <div class="modal-container" data-modal-index="2">
+                            <div class="modal-content">
+                                <div class="boxed boxed--lg">
+                                    <h2>[!--title--] 的豆瓣评分详情</h2>
+                                    <div id="c1"></div>
+                                </div>
+                                <div class="modal-close modal-close-cross"></div></div>
+                        </div>
+                    </div>
                     <?if ($navinfor[ename]){?><span class="tiny-title">又名: [!--ename--]</span><?}?>
                     <?if ($navinfor[pubdate]){?><span class="tiny-title">上映日期: [!--pubdate--]</span><?}?>
                     <?if ($navinfor[type]){?><span class="tiny-title">类型: [!--type--]</span><?}?>
@@ -201,7 +213,18 @@
                     ?>
                 </div>
                 <div class="col-md-4">
-                    <span style="font-size: 2em;font-weight: 700;color:#907e91;margin-bottom: .5em;display: block">剧情:</span><article class="information-text">重新抓取中...</article>
+                    <span style="font-size: 2em;font-weight: 700;color:#907e91;margin-bottom: .5em;display: block">剧情:</span>
+                    <article class="information-text">
+                        <?php
+                        $summary=$empire->query("select summary from www_92game_net_ecms_addinfo  where douban_id = '".$navinfor[douban_id]."' ");
+                        $r=$empire->fetch($summary);
+                        if ($r) {
+                            echo $r[summary];
+                        }else {
+                            echo "该影视条目暂无简介";
+                        }
+                        ?>
+                    </article>
                 </div>
             </div>
 
@@ -227,8 +250,8 @@
                     $i+=1;
                     ?>
                     <div class="col-md-4" style="padding: 0 10px;">
-                        <a href="http://image.bt0.com/screenshot/<?=$r[large]?>" data-lightbox="screenshot">
-                            <img alt="[!--title--] 影片截图<?=$i?>" src="http://image.bt0.com/screenshot/<?=$r[thumb]?>" />
+                        <a href="http://cdn.canfei.com/screenshot/<?=$r[large]?>" data-lightbox="screenshot">
+                            <img alt="[!--title--] 影片截图<?=$i?>" src="http://cdn.canfei.com/screenshot/<?=$r[thumb]?>" />
                         </a>
                     </div>
 
@@ -468,6 +491,8 @@ EOT;
                                     </tbody>
                                 </table>
 
+
+
                             </div>
                         </li>
                         <li class="">
@@ -592,6 +617,57 @@ EOT;
 </div>
 
 [!--temp.js--]
-<script src="http://bt0.com/js/lightbox.min.js"></script>
+<script src="//cdn2.canfei.com/js/lightbox.min.js"></script>
+<script src="https://gw.alipayobjects.com/as/g/datavis/g2/2.3.8/index.js"></script>
+<script>
+    <?php
+    echo "var did =".$navinfor[douban_id]."\;";
+    ?>
+    $.ajax({
+        url:'http://bttt.gq/api/rank.php?douban_id='+ did,
+        type:'get',
+        data:{},
+        async : true,
+        error:function(){
+            alert('error');
+        },
+        success:function(jsonData){
+            if (jsonData.rank.length != 0) {
+                var data =[
+                    {value:jsonData.rank["stars5"], name:'5星'},
+                    {value:jsonData.rank["stars4"], name:'4星'},
+                    {value:jsonData.rank["stars3"], name:'3星'},
+                    {value:jsonData.rank["stars2"], name:'2星'},
+                    {value:jsonData.rank["stars1"], name:'1星'}
+                ];
+                var chart = new G2.Chart({
+                    id: 'c1',
+                    forceFit: true,
+                    height: 480
+                });
+                var Frame = G2.Frame;
+                var frame = new Frame(data);
+                frame = Frame.sort(frame, 'value');
+                chart.source(frame);
+                chart.coord('polar');
+                chart.legend('name', {
+                    position: 'bottom'
+                });
+                chart.axis(false);
+                chart.interval().position('name*value')
+                    .color('name', [ '#A72023','#CB5050', '#9D1F22', '#70171A', '#461012'])
+                    .label('name')
+                    .style({
+                        stroke: '#fff',
+                        lineWidth: 2
+                    });
+                chart.render();
+            }
+
+        }
+    });
+
+
+</script>
 </body>
 </html>
