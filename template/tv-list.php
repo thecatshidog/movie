@@ -10,7 +10,7 @@ $page=(int)$_GET['page'];
 <html lang="zh-cmn-Hans" class="ua-windows ua-webkit">
 
 <head>
-    <title>[!--pagetitle--] - 不太灵</title>
+    <title>[!--pagetitle--] - bttt.gq</title>
     <meta name="description" content="[!--class.intro--]">
     <meta name="keywords" content="[!--class.keywords--]">
     [!--temp.css--]
@@ -24,8 +24,8 @@ $page=(int)$_GET['page'];
 
     <section class="imagebg bg--dark" style="padding-bottom: 3em">
 
-        <div class="background-image-holder" style="background: url(http://image.bt0.com/background/background.jpg); opacity: 1;height: 700px;">
-            <img alt="background" src="http://image.bt0.com/background/background.jpg">
+        <div class="background-image-holder" style="background: url(http://cdn2.canfei.com/background/background.jpg); opacity: 1;height: 700px;">
+            <img alt="background" src="http://cdn2.canfei.com/background/background.jpg">
         </div>
         <!--end of container-->
 

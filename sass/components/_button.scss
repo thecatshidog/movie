@@ -8,9 +8,8 @@
 }
 .tag-sm {
   color: #eee;
-  margin-right: 0.5em;
-  padding: 0.2em 1em;
   border-radius: 1em;
+  padding: 0.2em 0.44em;
 }
 .tag-group {
   margin: 1em 0;
@@ -75,8 +74,9 @@
 }
 .typebox dl dd a {
   color: #eee;
+  padding: 0.2em 0.44em;
 }
-.typebox dl:not(:last-child) {
+.typebox dl {
   margin-bottom: .6em;
   line-height: 1.8em;
   height: 1.8em;
