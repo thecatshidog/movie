@@ -3,8 +3,8 @@
 
 <head>
     <meta charset="utf-8">
-    <title>不太灵影视</title>
-    <meta name="description" content="bt0.com 不太灵影视是国内独树一帜的影视站点，资源全面，设计优雅，毫无广告，体验远超bt天堂，电影天堂，飘花电影，飞鸟娱乐，电影淘淘，MP4ba等站，是下载电影、下载字幕、观看影片最佳网站。">
+    <title>bttt.gq</title>
+    <meta name="description" content="bttt.gq 是国内独树一帜的影视站点，资源全面，设计优雅，毫无广告，体验远超bt天堂，电影天堂，飘花电影，飞鸟娱乐，电影淘淘，MP4ba等站，是下载电影、下载字幕、观看影片最佳网站。">
     <meta name="keywords" content="bt天堂,1080p电影,高清电影下载,最新电影,不太灵,电影天堂,mp4ba,字幕下载,字幕组,字幕库,subhd">
     [!--temp.css--]
 </head>
@@ -14,21 +14,21 @@
 [!--temp.menu--]
 <div class="main-container">
     <section class="text-center height-60 imagebg" data-overlay="4">
-        <div class="background-image-holder" style="background: url(http://image.bt0.com/background/herobg.png); opacity: 1;">
-            <img alt="background" src="http://image.bt0.com/background/herobg.png">
+        <div class="background-image-holder" style="background: url(http://cdn2.canfei.com/background/herobg.png); opacity: 1;">
+            <img alt="background" src="http://cdn2.canfei.com/background/herobg.png">
         </div>
         <div class="container pos-vertical-center">
             <div class="row">
                 <div class="col-sm-12">
                     <div class="typed-headline">
-                        <span class="h1 inline-block">不太灵影视</span>
+                        <span class="h1 inline-block">BTTT.GQ</span>
                     </div>
                     <p class="lead">
-                        某设计师的无聊之作
+                        干干净净的影视站
                     </p>
-                    <a class="btn btn--primary type--uppercase" href="/film-download/">
+                    <a class="btn btn--primary type--uppercase" target="_blank" href="//shang.qq.com/wpa/qunwpa?idkey=a08fdf1a42c3cba85f84b46655919387c83e5b9012117bde64e5b4ad1d9530e9">
                                 <span class="btn__text" >
-                                    开始探索
+                                    加入影迷群③
                                 </span>
                     </a>
                 </div>
