@@ -609,5 +609,56 @@ EOT;
 
 [!--temp.js--]
 <script src="//cdn2.canfei.com/js/lightbox.min.js"></script>
+<script src="https://gw.alipayobjects.com/as/g/datavis/g2/2.3.8/index.js"></script>
+<script>
+    <?php
+    echo "var did =".$navinfor[douban_id]."\;";
+    ?>
+    $.ajax({
+        url:'http://bttt.gq/api/rank.php?douban_id='+ did,
+        type:'get',
+        data:{},
+        async : true,
+        error:function(){
+            alert('error');
+        },
+        success:function(jsonData){
+            if (jsonData.rank.length != 0) {
+                var data =[
+                    {value:jsonData.rank["stars5"], name:'5星'},
+                    {value:jsonData.rank["stars4"], name:'4星'},
+                    {value:jsonData.rank["stars3"], name:'3星'},
+                    {value:jsonData.rank["stars2"], name:'2星'},
+                    {value:jsonData.rank["stars1"], name:'1星'}
+                ];
+                var chart = new G2.Chart({
+                    id: 'c1',
+                    forceFit: true,
+                    height: 480
+                });
+                var Frame = G2.Frame;
+                var frame = new Frame(data);
+                frame = Frame.sort(frame, 'value');
+                chart.source(frame);
+                chart.coord('polar');
+                chart.legend('name', {
+                    position: 'bottom'
+                });
+                chart.axis(false);
+                chart.interval().position('name*value')
+                    .color('name', [ '#A72023','#CB5050', '#9D1F22', '#70171A', '#461012'])
+                    .label('name')
+                    .style({
+                        stroke: '#fff',
+                        lineWidth: 2
+                    });
+                chart.render();
+            }
+
+        }
+    });
+
+
+</script>
 </body>
 </html>
