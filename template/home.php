@@ -14,8 +14,8 @@
 [!--temp.menu--]
 <div class="main-container">
     <section class="text-center height-60 imagebg" data-overlay="4">
-        <div class="background-image-holder" style="background: url(http://cdn2.canfei.com/background/herobg.png); opacity: 1;">
-            <img alt="background" src="http://cdn2.canfei.com/background/herobg.png">
+        <div class="background-image-holder" style="background: url(https://bttt.gq/background/herobg.png); opacity: 1;">
+            <img alt="background" src="https://bttt.gq/background/herobg.png">
         </div>
         <div class="container pos-vertical-center">
             <div class="row">

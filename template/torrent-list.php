@@ -24,8 +24,8 @@ $page=(int)$_GET['page'];
 
     <section class="imagebg  hidden-sm hidden-xs cover bg--dark height-40 text-center" style="padding-bottom: 0">
 
-        <div class="background-image-holder" style="background: url(http://image.bt0.com/background/background14.jpg); opacity: 1;height: 700px;">
-            <img alt="background" src="http://image.bt0.com/background/background14.jpg">
+        <div class="background-image-holder" style="background: url(https://bttt.gq/background/background14.jpg); opacity: 1;height: 700px;">
+            <img alt="background" src="https://bttt.gq/background/background14.jpg">
         </div>
 
 

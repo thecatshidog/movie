@@ -38,8 +38,8 @@ if($id>0)
 <div class="row">
 <div class="col-xs-3 col-sm-2">
 <a href="/">
-<img class="logo logo-dark" alt="logo" src="http://image.bt0.com/img/logo-dark.png">
-<img class="logo logo-light" alt="logo" src="http://image.bt0.com/img/logo-light.png">
+<img class="logo logo-dark" alt="logo" src="https://bttt.gq/img/logo-dark.png">
+<img class="logo logo-light" alt="logo" src="https://bttt.gq/img/logo-light.png">
 </a>
 </div>
 <div class="col-xs-9 col-sm-10 text-right">
@@ -56,8 +56,8 @@ if($id>0)
 <div class="col-md-2 hidden-xs hidden-sm">
 <div class="bar__module">
 <a href="/">
-<img class="logo logo-dark" alt="logo" src="http://image.bt0.com/img/logo-dark.png">
-<img class="logo logo-light" alt="logo" src="http://image.bt0.com/img/logo-light.png">
+<img class="logo logo-dark" alt="logo" src="https://bttt.gq/img/logo-dark.png">
+<img class="logo logo-light" alt="logo" src="https://bttt.gq/img/logo-light.png">
 </a>
 </div>
 </div>
@@ -110,8 +110,8 @@ if($id>0)
 
     <section class="imagebg bg--dark" style="padding-bottom: 0">
 
-        <div class="background-image-holder" style="background: url(http://image.bt0.com/background/background4.jpg); opacity: 1;height: 700px;">
-            <img alt="background" src="http://image.bt0.com/background/background4.jpg">
+        <div class="background-image-holder" style="background: url(https://bttt.gq/background/background4.jpg); opacity: 1;height: 700px;">
+            <img alt="background" src="https://bttt.gq/background/background4.jpg">
         </div>
 <div class="container">
     <div class="row">

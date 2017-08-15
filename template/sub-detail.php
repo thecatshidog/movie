@@ -136,7 +136,7 @@
                             <div class="masonry__item">
                                 <a href="/subject/<?=$cr[id]?>.html" class="block text-block" target="_blank">
                                     <div class="hover-shadow">
-                                        <img alt="[!--mvtitle--]" src="http://image.bt0.com/photo/[!--douban_id--].jpg">
+                                        <img alt="[!--mvtitle--]" src="https://bttt.gq/photo/[!--douban_id--].jpg">
                                     </div>
                                 </a>
                                 <div class="text-center">

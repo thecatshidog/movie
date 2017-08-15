@@ -24,8 +24,8 @@ $page=(int)$_GET['page'];
 
     <section class="imagebg bg--dark" style="padding-bottom: 3em">
 
-        <div class="background-image-holder" style="background: url(http://cdn2.canfei.com/background/background.jpg); opacity: 1;height: 700px;">
-            <img alt="background" src="http://cdn2.canfei.com/background/background.jpg">
+        <div class="background-image-holder" style="background: url(https://bttt.gq/background/background.jpg); opacity: 1;height: 700px;">
+            <img alt="background" src="https://bttt.gq/background/background.jpg">
         </div>
         <!--end of container-->
 

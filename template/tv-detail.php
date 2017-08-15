@@ -12,13 +12,13 @@
     <meta property="og:type" content="video"/>
     <meta property="og:title"content="[!--pagetitle--]"/>
     <meta property="og:image" content="[!--coverpic--]"/>
-    <meta property="og:url" content="http://bttt.gq/subject/[!--id--].html"/>
+    <meta property="og:url" content="https://bttt.gq/subject/[!--id--].html"/>
     <meta name="twitter:card" content="summary" />
-    <meta name="twitter:url" property="og:url" content="http://bttt.gq/subject/[!--id--].html" />
+    <meta name="twitter:url" property="og:url" content="https://bttt.gq/subject/[!--id--].html" />
     <meta name="twitter:title" property="og:title" content="[!--pagetitle--]" />
     <meta name="twitter:description" property="og:description" content="[!--pagetitle--]在线观看 高清电影下载，字幕资源下载，精彩影评查看" />
     <meta name="twitter:image" property="og:image" content="[!--titlepic--]" />
-    <link rel="canonical" href="http://bttt.gq/tv/[!--id--].html" />
+    <link rel="canonical" href="https://bttt.gq/tv/[!--id--].html" />
     [!--temp.css--]
 </head>
 <body>
@@ -231,31 +231,31 @@
 
 </section>
 
-<section class="text-center" style="position: relative;z-index: 9;background:#1a151c;padding: 0 0 3em 0;">
+<!--<section class="text-center" style="position: relative;z-index: 9;background:#1a151c;padding: 0 0 3em 0;">
     <div class="container">
         <div class="row">
             <div class="col-md-9">
                 <?php
-                $i=0;
+/*                $i=0;
                 $screenshot=$empire->query("select large,thumb from www_92game_net_ecms_screenshot  where douban_id = '".$navinfor[douban_id]."' order by thumb asc");
                 while($r=$empire->fetch($screenshot)) {
                     $i+=1;
-                    ?>
+                    */?>
                     <div class="col-md-4" style="padding: 0 10px;">
-                        <a href="http://cdn.canfei.com/screenshot/<?=$r[large]?>" data-lightbox="screenshot">
-                            <img alt="[!--title--] 影片截图<?=$i?>" src="http://cdn.canfei.com/screenshot/<?=$r[thumb]?>" />
+                        <a href="http://cdn.canfei.com/screenshot/<?/*=$r[large]*/?>" data-lightbox="screenshot">
+                            <img alt="[!--title--] 影片截图<?/*=$i*/?>" src="http://cdn.canfei.com/screenshot/<?/*=$r[thumb]*/?>" />
                         </a>
                     </div>
 
                     <?php
-                }
-                ?>
+/*                }
+                */?>
 
             </div>
 
         </div>
     </div>
-</section>
+</section>-->
 
 <section class="text-center bg--dark"  style="position: relative;z-index: 9;background:#1a151c;padding-top: 1em">
     <div class="container">
@@ -608,14 +608,14 @@ EOT;
 </div>
 
 [!--temp.js--]
-<script src="//cdn2.canfei.com/js/lightbox.min.js"></script>
+<script src="//bttt.gq/js/lightbox.min.js"></script>
 <script src="https://gw.alipayobjects.com/as/g/datavis/g2/2.3.8/index.js"></script>
 <script>
     <?php
     echo "var did =".$navinfor[douban_id]."\;";
     ?>
     $.ajax({
-        url:'http://bttt.gq/api/rank.php?douban_id='+ did,
+        url:'https://bttt.gq/api/rank.php?douban_id='+ did,
         type:'get',
         data:{},
         async : true,

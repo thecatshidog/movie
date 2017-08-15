@@ -25,7 +25,7 @@
                             <div class="masonry__item">
                                 <div>
                                     <?if ($navinfor[douban_id]){?>
-                                    <span class="tiny-title"><img style="border-radius:10px " alt="[!--title--]" src="http://image.bt0.com/photo/[!--douban_id--].jpg">
+                                    <span class="tiny-title"><img style="border-radius:10px " alt="[!--title--]" src="https://bttt.gq/photo/[!--douban_id--].jpg">
 
                                     <?}else {?>
 

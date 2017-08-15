@@ -5,8 +5,8 @@
             <div class="row">
                 <div class="col-xs-3 col-sm-2">
                     <a href="/">
-                        <img class="logo logo-dark" alt="logo" src="http://cdn2.canfei.com/logo-dark.png"/>
-                        <img class="logo logo-light" alt="logo" src="http://cdn2.canfei.com/logo-light.png"/>
+                        <img class="logo logo-dark" alt="logo" src="https://bttt.gq/logo-dark.png"/>
+                        <img class="logo logo-light" alt="logo" src="https://bttt.gq/logo-light.png"/>
                     </a>
                 </div>
                 <div class="col-xs-9 col-sm-10 text-right">
@@ -14,7 +14,7 @@
                         <i class="icon icon--sm stack-interface stack-menu"></i>
                     </a>
                 </div>
-            </div>
+            </div>c
 
         </div>
 
@@ -26,8 +26,8 @@
                 <div class="col-md-2 hidden-xs hidden-sm">
                     <div class="bar__module">
                         <a href="/">
-                            <img class="logo logo-dark" alt="logo" src="http://cdn2.canfei.com/logo-dark.png"/>
-                            <img class="logo logo-light" alt="logo" src="http://cdn2.canfei.com/logo-light.png"/>
+                            <img class="logo logo-dark" alt="logo" src="https://bttt.gq/logo-dark.png"/>
+                            <img class="logo logo-light" alt="logo" src="https://bttt.gq/logo-light.png"/>
                         </a>
                     </div>
 
