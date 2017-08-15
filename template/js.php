@@ -5,4 +5,4 @@
         threshold : 200
     });
 </script>
-<script src="//bttt.ml/dist/bundle.min.js"></script>
+<script src="//bttt.gq/dist/bundle.min.js"></script>
