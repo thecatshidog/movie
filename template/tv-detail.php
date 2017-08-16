@@ -12,13 +12,13 @@
     <meta property="og:type" content="video"/>
     <meta property="og:title"content="[!--pagetitle--]"/>
     <meta property="og:image" content="[!--coverpic--]"/>
-    <meta property="og:url" content="https://bttt.gq/subject/[!--id--].html"/>
+    <meta property="og:url" content="https://www.bt0.com/subject/[!--id--].html"/>
     <meta name="twitter:card" content="summary" />
-    <meta name="twitter:url" property="og:url" content="https://bttt.gq/subject/[!--id--].html" />
+    <meta name="twitter:url" property="og:url" content="https://www.bt0.com/subject/[!--id--].html" />
     <meta name="twitter:title" property="og:title" content="[!--pagetitle--]" />
     <meta name="twitter:description" property="og:description" content="[!--pagetitle--]在线观看 高清电影下载，字幕资源下载，精彩影评查看" />
     <meta name="twitter:image" property="og:image" content="[!--titlepic--]" />
-    <link rel="canonical" href="https://bttt.gq/tv/[!--id--].html" />
+    <link rel="canonical" href="https://www.bt0.com/tv/[!--id--].html" />
     [!--temp.css--]
 </head>
 <body>
@@ -608,14 +608,14 @@ EOT;
 </div>
 
 [!--temp.js--]
-<script src="//bttt.gq/js/lightbox.min.js"></script>
+<script src="//www.bt0.com/js/lightbox.min.js"></script>
 <script src="https://gw.alipayobjects.com/as/g/datavis/g2/2.3.8/index.js"></script>
 <script>
     <?php
     echo "var did =".$navinfor[douban_id]."\;";
     ?>
     $.ajax({
-        url:'https://bttt.gq/api/rank.php?douban_id='+ did,
+        url:'https://www.bt0.com/api/rank.php?douban_id='+ did,
         type:'get',
         data:{},
         async : true,

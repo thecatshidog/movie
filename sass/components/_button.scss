@@ -58,6 +58,10 @@
   border-radius: 4px;
   background-color: #c49f47;
   color: #efe;
+  transition: all 0.2s;
+}
+.tag-magnet:hover {
+  background: #c33c13;
 }
 .project-thumb.hover-element > a {
   height: 20em;
@@ -143,13 +147,15 @@
   display: block;
   margin-bottom: .5em;
 }
-.information-text span{
-  color:#a5789e!important;
-}
 .blue-link {
   color: #3f96ec;
 }
 .search-box .notification-close-cross {
   color: #fff;
+}
+
+.btn--primary, .btn--primary:visited {
+  background: #2aa461;
+  border-color: #1b7142;
 }
 

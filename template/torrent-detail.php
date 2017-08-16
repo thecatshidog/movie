@@ -15,8 +15,8 @@
 
     <section class="imagebg bg--dark hidden-sm hidden-xs" style="padding-bottom: 0">
 
-        <div class="background-image-holder" style="background: url(https://bttt.gq/background/background18.jpg); opacity: 1;height: 700px;">
-            <img alt="background" src="https://bttt.gq/background/background18.jpg">
+        <div class="background-image-holder" style="background: url(https://www.bt0.com/background/background18.jpg); opacity: 1;height: 700px;">
+            <img alt="background" src="//www.bt0.com/background/background18.jpg">
         </div>
 
         <div class="container" id="movie-content" itemscope itemtype="http://schema.org/Movie">

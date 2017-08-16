@@ -4,9 +4,9 @@
         <div class="container">
             <div class="row">
                 <div class="col-xs-3 col-sm-2">
-                    <a href="http://bt0.com/">
-                        <img class="logo logo-dark" alt="logo" src="https://bttt.gq/img/logo-dark.png" />
-                        <img class="logo logo-light" alt="logo" src="https://bttt.gq/img/logo-light.png" />
+                    <a href="http://www.bt0.com/">
+                        <img class="logo logo-dark" alt="logo" src="https://www.bt0.com/img/logo-dark.png" />
+                        <img class="logo logo-light" alt="logo" src="https://www.bt0.com/img/logo-light.png" />
                     </a>
                 </div>
                 <div class="col-xs-9 col-sm-10 text-right">
@@ -25,9 +25,9 @@
             <div class="row">
                 <div class="col-md-1 hidden-xs hidden-sm">
                     <div class="bar__module">
-                        <a href="http://bt0.com/">
-                            <img class="logo logo-dark" alt="logo" src="https://bttt.gq/img/logo-dark.png" />
-                            <img class="logo logo-light" alt="logo" src="https://bttt.gq/img/logo-light.png" />
+                        <a href="http://www.bt0.com/">
+                            <img class="logo logo-dark" alt="logo" src="https://www.bt0.com/img/logo-dark.png" />
+                            <img class="logo logo-light" alt="logo" src="https://www.bt0.com/img/logo-light.png" />
                         </a>
                     </div>
                     <!--end module-->

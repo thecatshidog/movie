@@ -23,11 +23,11 @@ if($id>0)
     <meta name="keywords" content="$title 在线播放">
     <meta name="description" content="$title 在线播放">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="http://bt0.com/css/bootstrap.css" rel="stylesheet" type="text/css" media="all"/>
-    <link href="http://bt0.com/css/theme.css" rel="stylesheet" type="text/css" media="all"/>
-    <link href="http://bt0.com/css/customh.css" rel="stylesheet" type="text/css" media="all"/>
+    <link href="http://www.bt0.com/css/bootstrap.css" rel="stylesheet" type="text/css" media="all"/>
+    <link href="http://www.bt0.com/css/theme.css" rel="stylesheet" type="text/css" media="all"/>
+    <link href="http://www.bt0.com/css/customh.css" rel="stylesheet" type="text/css" media="all"/>
     <!-- END THEME LAYOUT STYLES -->
-    <link rel="shortcut icon" href="http://bt0.com/favicon.ico" />
+    <link rel="shortcut icon" href="http://www.bt0.com/favicon.ico" />
 
 </head>
 <body>
@@ -38,8 +38,8 @@ if($id>0)
 <div class="row">
 <div class="col-xs-3 col-sm-2">
 <a href="/">
-<img class="logo logo-dark" alt="logo" src="https://bttt.gq/img/logo-dark.png">
-<img class="logo logo-light" alt="logo" src="https://bttt.gq/img/logo-light.png">
+<img class="logo logo-dark" alt="logo" src="https://www.bt0.com/img/logo-dark.png">
+<img class="logo logo-light" alt="logo" src="https://www.bt0.com/img/logo-light.png">
 </a>
 </div>
 <div class="col-xs-9 col-sm-10 text-right">
@@ -56,8 +56,8 @@ if($id>0)
 <div class="col-md-2 hidden-xs hidden-sm">
 <div class="bar__module">
 <a href="/">
-<img class="logo logo-dark" alt="logo" src="https://bttt.gq/img/logo-dark.png">
-<img class="logo logo-light" alt="logo" src="https://bttt.gq/img/logo-light.png">
+<img class="logo logo-dark" alt="logo" src="https://www.bt0.com/img/logo-dark.png">
+<img class="logo logo-light" alt="logo" src="https://www.bt0.com/img/logo-light.png">
 </a>
 </div>
 </div>
@@ -110,8 +110,8 @@ if($id>0)
 
     <section class="imagebg bg--dark" style="padding-bottom: 0">
 
-        <div class="background-image-holder" style="background: url(https://bttt.gq/background/background4.jpg); opacity: 1;height: 700px;">
-            <img alt="background" src="https://bttt.gq/background/background4.jpg">
+        <div class="background-image-holder" style="background: url(https://www.bt0.com/background/background4.jpg); opacity: 1;height: 700px;">
+            <img alt="background" src="https://www.bt0.com/background/background4.jpg">
         </div>
 <div class="container">
     <div class="row">
@@ -173,14 +173,14 @@ var _hmt = _hmt || [];
 })();
 </script>
 
-<script src="http://bt0.com/js/jquery-3.1.1.min.js"></script>
-<script src="http://bt0.com/js/typed.min.js"></script>
-<script src="http://bt0.com/js/isotope.min.js"></script>
-<script src="http://bt0.com/js/granim.min.js"></script>
-<script src="http://bt0.com/js/jquery.steps.min.js"></script>
-<script src="http://bt0.com/js/smooth-scroll.min.js"></script>
-<script src="http://bt0.com/js/scriptsv1.js"></script>
-<script src="http://bt0.com/js/lightbox.min.js"></script>
+<script src="http://www.bt0.com/js/jquery-3.1.1.min.js"></script>
+<script src="http://www.bt0.com/js/typed.min.js"></script>
+<script src="http://www.bt0.com/js/isotope.min.js"></script>
+<script src="http://www.bt0.com/js/granim.min.js"></script>
+<script src="http://www.bt0.com/js/jquery.steps.min.js"></script>
+<script src="http://www.bt0.com/js/smooth-scroll.min.js"></script>
+<script src="http://www.bt0.com/js/scriptsv1.js"></script>
+<script src="http://www.bt0.com/js/lightbox.min.js"></script>
 
 
 </body>

@@ -25,7 +25,7 @@ $page=(int)$_GET['page'];
                     <ul class="menu-horizontal">
                         <li class="dropdown">
                                     <span class="dropdown__trigger">
-                                        <img alt="Image" class="flag" src="http://bt0.com/img/flag-1.png" />
+                                        <img alt="Image" class="flag" src="http://www.bt0.com/img/flag-1.png" />
                                     </span>
                             <div class="dropdown__container">
                                 <div class="container">

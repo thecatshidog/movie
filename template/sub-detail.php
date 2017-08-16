@@ -22,7 +22,7 @@
                     <ul class="menu-horizontal">
                         <li class="dropdown">
                                     <span class="dropdown__trigger">
-                                        <img alt="Image" class="flag" src="http://bt0.com/img/flag-1.png" />
+                                        <img alt="Image" class="flag" src="http://www.bt0.com/img/flag-1.png" />
                                     </span>
                             <div class="dropdown__container">
                                 <div class="container">
@@ -136,7 +136,7 @@
                             <div class="masonry__item">
                                 <a href="/subject/<?=$cr[id]?>.html" class="block text-block" target="_blank">
                                     <div class="hover-shadow">
-                                        <img alt="[!--mvtitle--]" src="https://bttt.gq/photo/[!--douban_id--].jpg">
+                                        <img alt="[!--mvtitle--]" src="https://www.bt0.com/photo/[!--douban_id--].jpg">
                                     </div>
                                 </a>
                                 <div class="text-center">

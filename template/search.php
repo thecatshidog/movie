@@ -12,8 +12,8 @@
 
     <section class="imagebg" style="padding-bottom: 0">
 
-        <div class="background-image-holder" style="background: url(https://bttt.gq/background/background13.jpg); opacity: 1;height: 700px;">
-            <img alt="background" src="https://bttt.gq/background/background13.jpg">
+        <div class="background-image-holder" style="background: url(https://www.bt0.com/background/background13.jpg); opacity: 1;height: 700px;">
+            <img alt="background" src="https://www.bt0.com/background/background13.jpg">
         </div>
         <!--end of container-->
     </section>

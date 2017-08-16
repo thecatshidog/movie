@@ -31,8 +31,10 @@
   }
 }
 .menu-horizontal > li > a, .menu-horizontal > li > .modal-instance > a {
-  font-size: 1.2em;
+  font-size: 1.16em;
 }
-.menu-horizontal > li > a:hover, .menu-horizontal > li > .modal-instance > a:hover {
+.dropdown .dropdown__trigger:hover {
+  color:#66fbb6 !important;
+}
 
-}
+

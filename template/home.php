@@ -3,9 +3,9 @@
 
 <head>
     <meta charset="utf-8">
-    <title>bttt.gq</title>
-    <meta name="description" content="bttt.gq 是国内独树一帜的影视站点，资源全面，设计优雅，毫无广告，体验远超bt天堂，电影天堂，飘花电影，飞鸟娱乐，电影淘淘，MP4ba等站，是下载电影、下载字幕、观看影片最佳网站。">
-    <meta name="keywords" content="bt天堂,1080p电影,高清电影下载,最新电影,不太灵,电影天堂,mp4ba,字幕下载,字幕组,字幕库,subhd">
+    <title>不太灵 bt0.com</title>
+    <meta name="description" content="bt0 是国内独树一帜的影视站点，资源全面，设计优雅，毫无广告，体验远超bt天堂，电影天堂，飘花电影，飞鸟娱乐，电影淘淘，MP4ba等站，是下载电影、下载字幕、观看影片最佳网站。">
+    <meta name="keywords" content="不太灵,1080p电影,高清电影下载,最新电影,不太灵,电影天堂,mp4ba,字幕下载,字幕组,字幕库,subhd">
     [!--temp.css--]
 </head>
 <body>
@@ -14,14 +14,14 @@
 [!--temp.menu--]
 <div class="main-container">
     <section class="text-center height-60 imagebg" data-overlay="4">
-        <div class="background-image-holder" style="background: url(https://bttt.gq/background/herobg.png); opacity: 1;">
-            <img alt="background" src="https://bttt.gq/background/herobg.png">
+        <div class="background-image-holder" style="background: url(https://www.bt0.com/background/herobg.png); opacity: 1;">
+            <img alt="background" src="//www.bt0.com/background/herobg.png">
         </div>
         <div class="container pos-vertical-center">
             <div class="row">
                 <div class="col-sm-12">
                     <div class="typed-headline">
-                        <span class="h1 inline-block">BTTT.GQ</span>
+                        <span class="h1 inline-block">bt0有点不太灵</span>
                     </div>
                     <p class="lead">
                         干干净净的影视站

@@ -5,4 +5,4 @@
         threshold : 200
     });
 </script>
-<script src="//bttt.gq/dist/bundle.min.js"></script>
+<script src="//www.bt0.com/dist/bundle.min.js"></script>

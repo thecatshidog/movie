@@ -10,7 +10,7 @@ $page=(int)$_GET['page'];
 <html lang="zh-cmn-Hans" class="ua-windows ua-webkit">
 
 <head>
-    <title>[!--pagetitle--] - bttt.gq</title>
+    <title>[!--pagetitle--] - www.bt0.com</title>
     <meta name="description" content="[!--class.intro--]">
     <meta name="keywords" content="[!--class.keywords--]">
     [!--temp.css--]
@@ -24,8 +24,8 @@ $page=(int)$_GET['page'];
 
     <section class="imagebg bg--dark" style="padding-bottom: 3em">
 
-        <div class="background-image-holder" style="background: url(https://bttt.gq/background/background26.jpg); opacity: 1;height: 700px;">
-            <img alt="background" src="https://bttt.gq/background/background26.jpg">
+        <div class="background-image-holder" style="background: url(https://www.bt0.com/background/background26.jpg); opacity: 1;height: 700px;">
+            <img alt="background" src="//www.bt0.com/background/background26.jpg">
         </div>
         <!--end of container-->
 

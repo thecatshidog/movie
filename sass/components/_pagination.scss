@@ -24,10 +24,10 @@ ul.tsc_pagination .prev {
   transition: all .2s ease-in-out;
   -webkit-transition: all .2s ease-in-out;
   -moz-transition: all .2s ease-in-out;
-  background: url(https://bttt.gq/assets/global/img/arw_l.gif) center center no-repeat;
+  background: url(../assets/global/img/arw_l.gif) center center no-repeat;
 }
 ul.tsc_pagination .prev:hover {
-  background:#00a0d1 url(https://bttt.gq/assets/global/img/arw_l.gif) center center no-repeat !important;
+  background:#00a0d1 url(../assets/global/img/arw_l.gif) center center no-repeat !important;
 }
 ul.tsc_pagination .next {
   border-radius: 3px;
@@ -37,10 +37,10 @@ ul.tsc_pagination .next {
   transition: all .2s ease-in-out;
   -webkit-transition: all .2s ease-in-out;
   -moz-transition: all .2s ease-in-out;
-  background: url(https://bttt.gq/assets/global/img/arw_r.gif) center center no-repeat;
+  background: url(../assets/global/img/arw_r.gif) center center no-repeat;
 }
 ul.tsc_pagination .next:hover {
-  background:#00a0d1 url(https://bttt.gq/assets/global/img/arw_r.gif) center center no-repeat !important;
+  background:#00a0d1 url(../assets/global/img/arw_r.gif) center center no-repeat !important;
 }
 ul.tsc_pagination .active .current{
   color: #fff;
