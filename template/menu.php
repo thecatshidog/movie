@@ -14,10 +14,8 @@
                         <i class="icon icon--sm stack-interface stack-menu"></i>
                     </a>
                 </div>
-            </div>c
-
+            </div>
         </div>
-
     </div>
 
     <nav class="bar bar-2 hidden-xs bar--absolute bar--transparent" id="menu2">
