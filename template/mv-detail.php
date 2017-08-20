@@ -181,7 +181,7 @@
                     <?if ($navinfor[area]){?><span  class="tiny-title">上映地区: [!--area--]</span><?}?>
                     <?if ($navinfor[durationstv]){?><span  class="tiny-title">单集片长: [!--durationstv--]</span><?}?>
                     <?if ($navinfor[jishu]){?> <span  class="tiny-title">集数: [!--jishu--]</span><?}?>
-                    <span class="tiny-title">种子资源数: <span style="font-size: 1.3em;font-weight: 600;color:#3598dc;"><?=$zynum?></span> </span>
+                    <span class="tiny-title">种子资源数: <span  class="torrent-number" style=""><?=$zynum?></span> </span>
                     <span  style="display: block;margin-bottom: 1em">
 
                             <?php
@@ -213,7 +213,7 @@
                     ?>
                 </div>
                 <div class="col-md-4">
-                    <span style="font-size: 2em;font-weight: 700;color:#907e91;margin-bottom: .5em;display: block">剧情:</span>
+                    <span class="summary-title" >剧情:</span>
                     <article class="information-text">
                         <?php
                         $summary=$empire->query("select summary from www_92game_net_ecms_addinfo  where douban_id = '".$navinfor[douban_id]."' ");
