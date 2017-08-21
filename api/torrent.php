@@ -63,7 +63,9 @@ if($douban_id)
     }
 
     $torrents = array();
-
+    $count = array();
+    $total = array('total' => $zynum);
+    array_push($count,$total);
     if (count($mv_720) > 0) {
         $t = array();
         foreach ($mv_720 as $mv) {
@@ -79,6 +81,8 @@ if($douban_id)
     }
     $j = array('720p' => $t);
     array_push($torrents,$j);
+    $c = array('720p' => count($mv_720));
+    array_push($count,$c);
     }
 
 
@@ -97,6 +101,8 @@ if($douban_id)
         }
         $j = array('1080p' => $t);
         array_push($torrents,$j);
+        $c = array('1080p' => count($mv_1080));
+        array_push($count,$c);
     }
 
     if (count($mv_blueray) > 0) {
@@ -114,6 +120,8 @@ if($douban_id)
         }
         $j = array('blu-ray' => $t);
         array_push($torrents,$j);
+        $c = array('blu-ray' => count($mv_blueray));
+        array_push($count,$c);
     }
 
     if (count($mv_3d) > 0) {
@@ -131,6 +139,8 @@ if($douban_id)
         }
         $j = array('3d' => $t);
         array_push($torrents,$j);
+        $c = array('3d' => count($mv_3d));
+        array_push($count,$c);
     }
 
     if (count($mv_other) > 0) {
@@ -148,9 +158,12 @@ if($douban_id)
         }
         $j = array('other' => $t);
         array_push($torrents,$j);
+        $c = array('other' => count($mv_other));
+        array_push($count,$c);
     }
 
-    $data = array ('msg' => 'success', 'count' => $zynum, 'torrents' => $torrents);
+
+    $data = array ('msg' => 'yep', 'count' => $count, 'torrents' => $torrents);
     header('Content-type: application/json');
     echo json_encode($data);
 }

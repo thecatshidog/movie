@@ -18,7 +18,7 @@
             <div class="row">
                 <div class="col-sm-12">
                     <div class="typed-headline">
-                        <span class="h1 inline-block" style="color: #f0f0f0">bt0 有点不太灵</span>
+                        <span class="h1 inline-block" style="color: #f0f0f0">www.bt0.com 不太灵</span>
                     </div>
                     <p class="lead">
                         干干净净的影视站

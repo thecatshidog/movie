@@ -5,7 +5,7 @@ $listtemp='<div class="masonry__item col-md-3 col-sm-6 col-xs-6" data-masonry-fi
                 <img class="lazy" alt="[!--title--]" data-original="[!--titlepic--]" />
             <figcaption>
                 <h2>[!--title--]<br><span>[!--year--]</span></h2>
-                <p>[!--summary--]</p>
+
                 <h5>[!--title--]<span class="type--fine-print">([!--year--])</span>
                     <span class="tag-sm tag-picture2">[!--score--]</span>
                 </h5>
@@ -22,7 +22,7 @@ $listtemp='<div class="masonry__item col-md-3 col-sm-6 col-xs-6" data-masonry-fi
                 <img class="lazy" alt="[!--title--]" data-original="[!--titlepic--]" />
             <figcaption>
                 <h2>[!--title--]<br><span>[!--year--]</span></h2>
-                <p>[!--summary--]</p>
+
                 <h5>[!--title--]<span class="type--fine-print">([!--year--])</span>
                 </h5>
             </figcaption>
