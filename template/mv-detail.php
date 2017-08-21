@@ -160,7 +160,7 @@
                     </div>
                 </div>
                 <div class="col-md-4" style="margin-bottom:2em">
-                    <span style="font-size: 2em;font-weight: 700;color:#be997f;display: block;margin-bottom: .5em">[!--title--]</span>
+                    <span class="info-title">[!--title--]</span><br>
                     <div class="modal-instance">
                         <a class="modal-trigger" href="#" data-modal-index="2">
                             <span class="tiny-title">豆瓣评分: <span style="font-size: 2em;font-weight: 700;color:#fc9b35;" >[!--score--]</span></span>
@@ -181,39 +181,35 @@
                     <?if ($navinfor[area]){?><span  class="tiny-title">上映地区: [!--area--]</span><?}?>
                     <?if ($navinfor[durationstv]){?><span  class="tiny-title">单集片长: [!--durationstv--]</span><?}?>
                     <?if ($navinfor[jishu]){?> <span  class="tiny-title">集数: [!--jishu--]</span><?}?>
-                    <span class="tiny-title">种子资源数: <span  class="torrent-number" style=""><?=$zynum?></span> </span>
-                    <span  style="display: block;margin-bottom: 1em">
+                    <span class="tiny-title">种子资源数: <span  class="torrent-number"><?=$zynum?></span> </span>
+                    <div class="torrent-nav">
 
                             <?php
                             if (count($mv_720) > 0) {
-                                echo '<a class="tag-transparent type--italic" href="#720p">720P</a>';
+                                echo '<a class="tag-transparent" href="#720p">720P</a>';
                             }?>
                             <?php
                             if (count($mv_1080) > 0) {
-                                echo '<a class="tag-transparent type--italic" href="#1080p">1080P</a>';
+                                echo '<a class="tag-transparent" href="#1080p">1080P</a>';
                             }?>
                             <?php
                             if (count($mv_blueray) > 0) {
-                                echo '<a class="tag-transparent type--italic" href="#bluray">蓝光</a>';
+                                echo '<a class="tag-transparent" href="#bluray">蓝光</a>';
                             }?>
                             <?php
                             if (count($mv_3d) > 0) {
-                                echo '<a class="tag-transparent type--italic" href="#3d">3D</a>';
+                                echo '<a class="tag-transparent" href="#3d">3D</a>';
                             }?>
                             <?php
                             if (count($mv_other) > 0) {
-                                echo '<a class="tag-transparent type--italic" href="#other">普清</a>';
-                            }?></span>
-                    <?php
-                    if ($navinfor[iqiyi_link]) {
-                        echo '<a class="btn btn--icon bg--googleplus" href="/online/'.$navinfor[id].'.html" target="_blank"><span class="btn__text" style="margin-bottom: 0"><i class="socicon socicon-youtube"></i>可在线播放</span></a>';
-                        ?>
-                        <?php
-                    }
-                    ?>
+                                echo '<a class="tag-transparent" href="#other">普清</a>';
+                            }?>
+                    </div>
+
                 </div>
                 <div class="col-md-4">
-                    <span class="summary-title" >剧情:</span>
+                    <div class="summary-card">
+                    <span class="summary-title">剧情:</span>
                     <article class="information-text">
                         <?php
                         $summary=$empire->query("select summary from www_92game_net_ecms_addinfo  where douban_id = '".$navinfor[douban_id]."' ");
@@ -225,6 +221,7 @@
                         }
                         ?>
                     </article>
+                    </div>
                 </div>
             </div>
 
@@ -617,7 +614,7 @@ EOT;
 </div>
 
 [!--temp.js--]
-<script src="//www.bt0.com/js/lightbox.min.js"></script>
+<script src="//cdn.bt0.com/js/lightbox.min.js"></script>
 <script src="https://gw.alipayobjects.com/as/g/datavis/g2/2.3.8/index.js"></script>
 <script>
     <?php

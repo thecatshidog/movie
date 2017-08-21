@@ -13,7 +13,7 @@
 
 [!--temp.menu--]
 <div class="main-container">
-    <section class="text-center height-60" style="background:#2b2b2b">
+    <section class="text-center height-60" style="background:rgb(31,31,31)">
         <div class="container pos-vertical-center">
             <div class="row">
                 <div class="col-sm-12">
