@@ -163,7 +163,15 @@
                     <span class="info-title">[!--title--]</span><br>
                     <div class="modal-instance">
                         <a class="modal-trigger" href="#" data-modal-index="2">
-                            <span class="tiny-title">豆瓣评分: <span style="font-size: 2em;font-weight: 700;color:#fc9b35;" >[!--score--]</span></span>
+                            <span class="tiny-title">豆瓣评分: <span style="font-size: 2em;font-weight: 700;color:#fc9b35;" >  <?php
+                                    $score=$empire->query("select score from www_92game_net_ecms_addinfo  where douban_id = '".$navinfor[douban_id]."' ");
+                                    $r=$empire->fetch($score);
+                                    if ($r) {
+                                        echo $r[score];
+                                    }else {
+                                        echo "<span style='font-size: 0.6em;color: #cea588;font-weight: normal;'>同步评分数据中...</span>";
+                                    }
+                                    ?></span></span>
                         </a>
                         <div class="modal-container" data-modal-index="2">
                             <div class="modal-content">
@@ -181,35 +189,33 @@
                     <?if ($navinfor[area]){?><span  class="tiny-title">上映地区: [!--area--]</span><?}?>
                     <?if ($navinfor[durationstv]){?><span  class="tiny-title">单集片长: [!--durationstv--]</span><?}?>
                     <?if ($navinfor[jishu]){?> <span  class="tiny-title">集数: [!--jishu--]</span><?}?>
-                    <span class="tiny-title">种子资源数: <span  class="torrent-number"><?=$zynum?></span> </span>
+                    <span class="tiny-title">种子资源数: <span  class="torrent-number" style=""><?=$zynum?></span> </span>
                     <div class="torrent-nav">
-
-                            <?php
+                    <?php
                             if (count($mv_720) > 0) {
-                                echo '<a class="tag-transparent" href="#720p">720P</a>';
+                                echo '<a class="tag-transparent type--italic" href="#720p">720P</a>';
                             }?>
                             <?php
                             if (count($mv_1080) > 0) {
-                                echo '<a class="tag-transparent" href="#1080p">1080P</a>';
+                                echo '<a class="tag-transparent type--italic" href="#1080p">1080P</a>';
                             }?>
                             <?php
                             if (count($mv_blueray) > 0) {
-                                echo '<a class="tag-transparent" href="#bluray">蓝光</a>';
+                                echo '<a class="tag-transparent type--italic" href="#bluray">蓝光</a>';
                             }?>
                             <?php
                             if (count($mv_3d) > 0) {
-                                echo '<a class="tag-transparent" href="#3d">3D</a>';
+                                echo '<a class="tag-transparent type--italic" href="#3d">3D</a>';
                             }?>
                             <?php
                             if (count($mv_other) > 0) {
-                                echo '<a class="tag-transparent" href="#other">普清</a>';
+                                echo '<a class="tag-transparent type--italic" href="#other">普清</a>';
                             }?>
                     </div>
-
                 </div>
                 <div class="col-md-4">
                     <div class="summary-card">
-                    <span class="summary-title">剧情:</span>
+                    <span class="summary-title" >剧情:</span>
                     <article class="information-text">
                         <?php
                         $summary=$empire->query("select summary from www_92game_net_ecms_addinfo  where douban_id = '".$navinfor[douban_id]."' ");
@@ -265,7 +271,7 @@
 <section class="text-center bg--dark"  style="position: relative;z-index: 9;background:#1a151c;padding-top: 1em">
     <div class="container">
         <div class="row">
-            <div class="col-md-9 boxed bg--secondary" style="background: rgba(0, 0, 0, 0.08);">
+            <div class="col-md-10 boxed bg--secondary" style="background: rgba(0, 0, 0, 0.08);">
                 <div class="tabs-container" data-content-align="left">
                     <ul class="tabs">
                         <li class="active">
@@ -313,12 +319,14 @@ EOT;
                                                     }
                                                     ?><?=$mv[title]?></a></div>
 
-                                            <div class="col-md-4"><div class="tag-sm tag-size text-center"><?=$mv[size]?></div></div>
+                                            <div class="col-md-3"><div class="tag-sm tag-size text-center"><?=$mv[size]?></div></div>
 
-                                            <div class="col-md-4"><div class="tag-sm tag-picture3 text-center"><?=$mv[picture]?></div></div>
+                                            <div class="col-md-3"><div class="tag-sm tag-picture3 text-center"><?=$mv[picture]?></div></div>
 
-                                            <div class="col-md-4"><a href="<?=$mv[magnet]?>"><div class="tag-sm tag-magnet text-center">磁力链接</div></a></div>
-                                        
+                                            <div class="col-md-3"><a href="<?=$mv[magnet]?>"><div class="tag-sm tag-magnet text-center">磁力链接</div></a></div>
+
+                                            <div class="col-md-3"><a href="http://download.bt0.com/<?=$mv[bt]?>"><div class="tag-sm tag-download text-center">下载种子</div></a></div>
+
                                             <div class="col-md-12 border-bottom-1px"></div>
                                         </div>
 
@@ -345,12 +353,13 @@ EOT;
                                                     }
                                                     ?><?=$mv[title]?></a></div>
 
-                                            <div class="col-md-4"><div class="tag-sm tag-size text-center"><?=$mv[size]?></div></div>
+                                            <div class="col-md-3"><div class="tag-sm tag-size text-center"><?=$mv[size]?></div></div>
 
-                                            <div class="col-md-4"><div class="tag-sm tag-picture3 text-center"><?=$mv[picture]?></div></div>
+                                            <div class="col-md-3"><div class="tag-sm tag-picture3 text-center"><?=$mv[picture]?></div></div>
 
-                                            <div class="col-md-4"><a href="<?=$mv[magnet]?>"><div class="tag-sm tag-magnet text-center">磁力链接</div></a></div>
-                                         
+                                            <div class="col-md-3"><a href="<?=$mv[magnet]?>"><div class="tag-sm tag-magnet text-center">磁力链接</div></a></div>
+
+                                            <div class="col-md-3"><a href="http://download.bt0.com/<?=$mv[bt]?>"><div class="tag-sm tag-download text-center">下载种子</div></a></div>
                                             <div class="col-md-12 border-bottom-1px"></div>
                                         </div>
 
@@ -378,12 +387,13 @@ EOT;
                                                     }
                                                     ?><?=$mv[title]?></a></div>
 
-                                            <div class="col-md-4"><div class="tag-sm tag-size text-center"><?=$mv[size]?></div></div>
+                                            <div class="col-md-3"><div class="tag-sm tag-size text-center"><?=$mv[size]?></div></div>
 
-                                            <div class="col-md-4"><div class="tag-sm tag-picture3 text-center"><?=$mv[picture]?></div></div>
+                                            <div class="col-md-3"><div class="tag-sm tag-picture3 text-center"><?=$mv[picture]?></div></div>
 
-                                            <div class="col-md-4"><a href="<?=$mv[magnet]?>"><div class="tag-sm tag-magnet text-center">磁力链接</div></a></div>
-                                        
+                                            <div class="col-md-3"><a href="<?=$mv[magnet]?>"><div class="tag-sm tag-magnet text-center">磁力链接</div></a></div>
+
+                                            <div class="col-md-3"><a href="http://download.bt0.com/<?=$mv[bt]?>"><div class="tag-sm tag-download text-center">下载种子</div></a></div>
                                             <div class="col-md-12 border-bottom-1px"></div>
                                         </div>
 
@@ -411,12 +421,14 @@ EOT;
                                                     }
                                                     ?><?=$mv[title]?></a></div>
 
-                                            <div class="col-md-4"><div class="tag-sm tag-size text-center"><?=$mv[size]?></div></div>
+                                            <div class="col-md-3"><div class="tag-sm tag-size text-center"><?=$mv[size]?></div></div>
 
-                                            <div class="col-md-4"><div class="tag-sm tag-picture3 text-center"><?=$mv[picture]?></div></div>
+                                            <div class="col-md-3"><div class="tag-sm tag-picture3 text-center"><?=$mv[picture]?></div></div>
 
-                                            <div class="col-md-4"><a href="<?=$mv[magnet]?>"><div class="tag-sm tag-magnet text-center">磁力链接</div></a></div>
-                                       
+                                            <div class="col-md-3"><a href="<?=$mv[magnet]?>"><div class="tag-sm tag-magnet text-center">磁力链接</div></a></div>
+
+                                            <div class="col-md-3"><a href="http://download.bt0.com/<?=$mv[bt]?>"><div class="tag-sm tag-download text-center">下载种子</div></a></div>
+
                                             <div class="col-md-12 border-bottom-1px"></div>
                                         </div>
 
@@ -443,12 +455,14 @@ EOT;
                                                     }
                                                     ?><?=$mv[title]?></a></div>
 
-                                            <div class="col-md-4"><div class="tag-sm tag-size text-center"><?=$mv[size]?></div></div>
+                                            <div class="col-md-3"><div class="tag-sm tag-size text-center"><?=$mv[size]?></div></div>
 
-                                            <div class="col-md-4"><div class="tag-sm tag-picture3 text-center"><?=$mv[picture]?></div></div>
+                                            <div class="col-md-3"><div class="tag-sm tag-picture3 text-center"><?=$mv[picture]?></div></div>
 
-                                            <div class="col-md-4"><a href="<?=$mv[magnet]?>"><div class="tag-sm tag-magnet text-center">磁力链接</div></a></div>
-                                         
+                                            <div class="col-md-3"><a href="<?=$mv[magnet]?>"><div class="tag-sm tag-magnet text-center">磁力链接</div></a></div>
+
+                                            <div class="col-md-3"><a href="http://download.bt0.com/<?=$mv[bt]?>"><div class="tag-sm tag-download text-center">下载种子</div></a></div>
+
                                             <div class="col-md-12 border-bottom-1px"></div>
                                         </div>
 
@@ -614,7 +628,7 @@ EOT;
 </div>
 
 [!--temp.js--]
-<script src="//cdn.bt0.com/js/lightbox.min.js"></script>
+<script src="//www.bt0.com/js/lightbox.min.js"></script>
 <script src="https://gw.alipayobjects.com/as/g/datavis/g2/2.3.8/index.js"></script>
 <script>
     <?php

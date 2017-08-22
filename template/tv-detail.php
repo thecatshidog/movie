@@ -160,10 +160,18 @@
                     </div>
                 </div>
                 <div class="col-md-4" style="margin-bottom:2em">
-                    <span style="font-size: 2em;font-weight: 700;color:#be997f;display: block;margin-bottom: .5em">[!--title--]</span>
+                    <span class="info-title">[!--title--]</span><br>
                     <div class="modal-instance">
                         <a class="modal-trigger" href="#" data-modal-index="2">
-                            <span class="tiny-title">豆瓣评分: <span style="font-size: 2em;font-weight: 700;color:#fc9b35;" >[!--score--]</span></span>
+                            <span class="tiny-title">豆瓣评分: <span style="font-size: 2em;font-weight: 700;color:#fc9b35;" >  <?php
+                                    $score=$empire->query("select score from www_92game_net_ecms_addinfo  where douban_id = '".$navinfor[douban_id]."' ");
+                                    $r=$empire->fetch($score);
+                                    if ($r) {
+                                        echo $r[score];
+                                    }else {
+                                        echo "<span style='font-size: 0.6em;color: #cea588;font-weight: normal;'>同步评分数据中...</span>";
+                                    }
+                                    ?></span></span>
                         </a>
                         <div class="modal-container" data-modal-index="2">
                             <div class="modal-content">
@@ -182,7 +190,7 @@
                     <?if ($navinfor[durationstv]){?><span  class="tiny-title">单集片长: [!--durationstv--]</span><?}?>
                     <?if ($navinfor[jishu]){?> <span  class="tiny-title">集数: [!--jishu--]</span><?}?>
                     <span class="tiny-title">种子资源数: <span class="torrent-number"><?=$zynum?></span> </span>
-                    <span  style="display: block;margin-bottom: 1em">
+                    <div class="torrent-nav">
 
                             <?php
                             if (count($mv_720) > 0) {
@@ -203,9 +211,11 @@
                             <?php
                             if (count($mv_other) > 0) {
                                 echo '<a class="tag-transparent type--italic" href="#other">普清</a>';
-                            }?></span>
+                            }?>
+                    </div>
                 </div>
                 <div class="col-md-4">
+                    <div class="summary-card">
                     <span class="summary-title">剧情:</span>
                     <article class="information-text">
                         <?php
@@ -218,6 +228,7 @@
                         }
                         ?>
                     </article>
+                    </div>
                 </div>
             </div>
 
@@ -261,7 +272,7 @@
 <section class="text-center bg--dark"  style="position: relative;z-index: 9;background:#1a151c;padding-top: 1em">
     <div class="container">
         <div class="row">
-            <div class="col-md-9 boxed bg--secondary" style="background: rgba(0, 0, 0, 0.08);">
+            <div class="col-md-10 boxed bg--secondary" style="background: rgba(0, 0, 0, 0.08);">
                 <div class="tabs-container" data-content-align="left">
                     <ul class="tabs">
                         <li class="active">
@@ -309,11 +320,13 @@ EOT;
                                                     }
                                                     ?><?=$mv[title]?></a></div>
 
-                                            <div class="col-md-4"><div class="tag-sm tag-size text-center"><?=$mv[size]?></div></div>
+                                            <div class="col-md-3"><div class="tag-sm tag-size text-center"><?=$mv[size]?></div></div>
 
-                                            <div class="col-md-4"><div class="tag-sm tag-picture3 text-center"><?=$mv[picture]?></div></div>
+                                            <div class="col-md-3"><div class="tag-sm tag-picture3 text-center"><?=$mv[picture]?></div></div>
 
-                                            <div class="col-md-4"><a href="<?=$mv[magnet]?>"><div class="tag-sm tag-magnet text-center">磁力链接</div></a></div>
+                                            <div class="col-md-3"><a href="<?=$mv[magnet]?>"><div class="tag-sm tag-magnet text-center">磁力链接</div></a></div>
+
+                                            <div class="col-md-3"><a href="http://download.bt0.com/<?=$mv[bt]?>"><div class="tag-sm tag-download text-center">下载种子</div></a></div>
                                     
                                             <div class="col-md-12 border-bottom-1px"></div>
                                         </div>
@@ -341,11 +354,13 @@ EOT;
                                                     }
                                                     ?><?=$mv[title]?></a></div>
 
-                                            <div class="col-md-4"><div class="tag-sm tag-size text-center"><?=$mv[size]?></div></div>
+                                            <div class="col-md-3"><div class="tag-sm tag-size text-center"><?=$mv[size]?></div></div>
 
-                                            <div class="col-md-4"><div class="tag-sm tag-picture3 text-center"><?=$mv[picture]?></div></div>
+                                            <div class="col-md-3"><div class="tag-sm tag-picture3 text-center"><?=$mv[picture]?></div></div>
 
-                                            <div class="col-md-4"><a href="<?=$mv[magnet]?>"><div class="tag-sm tag-magnet text-center">磁力链接</div></a></div>
+                                            <div class="col-md-3"><a href="<?=$mv[magnet]?>"><div class="tag-sm tag-magnet text-center">磁力链接</div></a></div>
+
+                                            <div class="col-md-3"><a href="http://download.bt0.com/<?=$mv[bt]?>"><div class="tag-sm tag-download text-center">下载种子</div></a></div>
                                           
                                             <div class="col-md-12 border-bottom-1px"></div>
                                         </div>
@@ -374,12 +389,13 @@ EOT;
                                                     }
                                                     ?><?=$mv[title]?></a></div>
 
-                                            <div class="col-md-4"><div class="tag-sm tag-size text-center"><?=$mv[size]?></div></div>
+                                            <div class="col-md-3"><div class="tag-sm tag-size text-center"><?=$mv[size]?></div></div>
 
-                                            <div class="col-md-4"><div class="tag-sm tag-picture3 text-center"><?=$mv[picture]?></div></div>
+                                            <div class="col-md-3"><div class="tag-sm tag-picture3 text-center"><?=$mv[picture]?></div></div>
 
-                                            <div class="col-md-4"><a href="<?=$mv[magnet]?>"><div class="tag-sm tag-magnet text-center">磁力链接</div></a></div>
-                                   
+                                            <div class="col-md-3"><a href="<?=$mv[magnet]?>"><div class="tag-sm tag-magnet text-center">磁力链接</div></a></div>
+
+                                            <div class="col-md-3"><a href="http://download.bt0.com/<?=$mv[bt]?>"><div class="tag-sm tag-download text-center">下载种子</div></a></div>
                                             <div class="col-md-12 border-bottom-1px"></div>
                                         </div>
 
@@ -407,11 +423,13 @@ EOT;
                                                     }
                                                     ?><?=$mv[title]?></a></div>
 
-                                            <div class="col-md-4"><div class="tag-sm tag-size text-center"><?=$mv[size]?></div></div>
+                                            <div class="col-md-3"><div class="tag-sm tag-size text-center"><?=$mv[size]?></div></div>
 
-                                            <div class="col-md-4"><div class="tag-sm tag-picture3 text-center"><?=$mv[picture]?></div></div>
+                                            <div class="col-md-3"><div class="tag-sm tag-picture3 text-center"><?=$mv[picture]?></div></div>
 
-                                            <div class="col-md-4"><a href="<?=$mv[magnet]?>"><div class="tag-sm tag-magnet text-center">磁力链接</div></a></div>
+                                            <div class="col-md-3"><a href="<?=$mv[magnet]?>"><div class="tag-sm tag-magnet text-center">磁力链接</div></a></div>
+
+                                            <div class="col-md-3"><a href="http://download.bt0.com/<?=$mv[bt]?>"><div class="tag-sm tag-download text-center">下载种子</div></a></div>
                                     
                                             <div class="col-md-12 border-bottom-1px"></div>
                                         </div>
@@ -439,11 +457,13 @@ EOT;
                                                     }
                                                     ?><?=$mv[title]?></a></div>
 
-                                            <div class="col-md-4"><div class="tag-sm tag-size text-center"><?=$mv[size]?></div></div>
+                                            <div class="col-md-3"><div class="tag-sm tag-size text-center"><?=$mv[size]?></div></div>
 
-                                            <div class="col-md-4"><div class="tag-sm tag-picture3 text-center"><?=$mv[picture]?></div></div>
+                                            <div class="col-md-3"><div class="tag-sm tag-picture3 text-center"><?=$mv[picture]?></div></div>
 
-                                            <div class="col-md-4"><a href="<?=$mv[magnet]?>"><div class="tag-sm tag-magnet text-center">磁力链接</div></a></div>
+                                            <div class="col-md-3"><a href="<?=$mv[magnet]?>"><div class="tag-sm tag-magnet text-center">磁力链接</div></a></div>
+
+                                            <div class="col-md-3"><a href="http://download.bt0.com/<?=$mv[bt]?>"><div class="tag-sm tag-download text-center">下载种子</div></a></div>
                                         
                                             <div class="col-md-12 border-bottom-1px"></div>
                                         </div>
