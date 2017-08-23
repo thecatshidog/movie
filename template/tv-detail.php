@@ -344,7 +344,7 @@ EOT;
 EOT;
                                     foreach ($mv_1080 as $mv) {	?>
                                         <div class="container">
-                                            <div class="col-md-12"> <a class="torrent-title" style="color: #3f96ec;" href="/torrent_<?=$mv[id]?>.html" target="_blank">
+                                            <div class="col-md-12"> <a class="torrent-title" style="color: #3f96ec;" href="/torrent/<?=$mv[id]?>.html" target="_blank">
                                                     <?php
                                                     if($mv[episode])
                                                     {
@@ -379,7 +379,7 @@ EOT;
 EOT;
                                     foreach ($mv_blueray as $mv) {	?>
                                         <div class="container">
-                                            <div class="col-md-12"> <a class="torrent-title" style="color: #3f96ec;" href="/torrent_<?=$mv[id]?>.html" target="_blank">
+                                            <div class="col-md-12"> <a class="torrent-title" style="color: #3f96ec;" href="/torrent/<?=$mv[id]?>.html" target="_blank">
                                                     <?php
                                                     if($mv[episode])
                                                     {
@@ -413,7 +413,7 @@ EOT;
 EOT;
                                     foreach ($mv_3d as $mv) {	?>
                                         <div class="container">
-                                            <div class="col-md-12"> <a class="torrent-title" style="color: #3f96ec;" href="/torrent_<?=$mv[id]?>.html" target="_blank">
+                                            <div class="col-md-12"> <a class="torrent-title" style="color: #3f96ec;" href="/torrent/<?=$mv[id]?>.html" target="_blank">
                                                     <?php
                                                     if($mv[episode])
                                                     {
@@ -447,7 +447,7 @@ EOT;
 EOT;
                                     foreach ($mv_other as $mv) {	?>
                                         <div class="container">
-                                            <div class="col-md-12"> <a class="torrent-title" style="color: #3f96ec;" href="/torrent_<?=$mv[id]?>.html" target="_blank">
+                                            <div class="col-md-12"> <a class="torrent-title" style="color: #3f96ec;" href="/torrent/<?=$mv[id]?>.html" target="_blank">
                                                     <?php
                                                     if($mv[episode])
                                                     {
