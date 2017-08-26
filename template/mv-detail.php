@@ -18,7 +18,7 @@
     <meta name="twitter:title" property="og:title" content="[!--pagetitle--]" />
     <meta name="twitter:description" property="og:description" content="[!--pagetitle--]在线观看 高清电影下载，字幕资源下载，精彩影评查看" />
     <meta name="twitter:image" property="og:image" content="[!--titlepic--]" />
-    <link rel="canonical" href="//www.bt0.com/mv/[!--id--].html" />
+    <link rel="canonical" href="//www.bt0.com/subject/[!--id--].html" />
     [!--temp.css--]
 </head>
 <body>
@@ -189,28 +189,105 @@
                     <?if ($navinfor[area]){?><span  class="tiny-title">上映地区: [!--area--]</span><?}?>
                     <?if ($navinfor[durationstv]){?><span  class="tiny-title">单集片长: [!--durationstv--]</span><?}?>
                     <?if ($navinfor[jishu]){?> <span  class="tiny-title">集数: [!--jishu--]</span><?}?>
+
+
                     <span class="tiny-title">种子资源数: <span  class="torrent-number" style=""><?=$zynum?></span> </span>
                     <div class="torrent-nav">
+                        <div class="modal-instance">
+                            <a class="modal-trigger tag-transparent" href="#" data-modal-index="3">查看演员相关信息</a>
+                            <div class="modal-container" data-modal-index="3">
+                                <div class="modal-content">
+                                    <div class="boxed boxed--lg">
+                                        <div class="container">
+                                            <?if ($navinfor[director]){?>
+                                                <div class="directors">
+                                                    <span class="type--bold">导演：</span>
+                                                    <div class="tag-box">
+                                                        <?
+                                                        $exp=explode(",",$navinfor[director]);
+                                                        $count=count($exp);
+                                                        for($i=0;$i<$count;$i++)
+                                                        {?>
+                                                            <a class="name-cast" href="/e/search/?searchget=1&show=director&tbname=movie&tempid=1&keyboard=<?=$exp[$i]?>" target="_blank">
+                                            <span itemprop="director" class="releated-people-tags" itemscope itemtype="http://schema.org/Person">
+                                                <span itemprop="name" ><?=$exp[$i]?></span>
+                                            </span>
+                                                            </a>
+                                                            <?
+                                                        }
+                                                        ?>
+                                                    </div>
+                                                </div>
+                                            <?}?>
+
+                                            <?if ($navinfor[screenwriter]){?>
+                                                <div class="directors" style="margin-top: 12px">
+                                                    <span class="type--bold">编剧：</span>
+                                                    <div class="tag-box">
+                                                        <?
+                                                        $exp=explode(",",$navinfor[screenwriter]);
+                                                        $count=count($exp);
+                                                        for($i=0;$i<$count;$i++)
+                                                        {?>
+                                                            <a class="name-cast" href="/e/search/?searchget=1&show=screenwriter&tbname=movie&tempid=1&keyboard=<?=$exp[$i]?>" target="_blank">
+                                            <span itemprop="director" class="releated-people-tags" itemscope itemtype="http://schema.org/Person">
+                                            <span itemprop="name" ><?=$exp[$i]?></span>
+                                            </span>
+                                                            </a>
+                                                            <?
+                                                        }
+                                                        ?>
+                                                    </div>
+                                                </div>
+
+                                            <?}?>
+                                            <?if ($navinfor[star]){?>
+                                                <div class="directors" style="margin-top: 12px">
+                                                    <span class="type--bold">主演：</span>
+                                                    <div class="tag-box">
+                                                        <?
+                                                        $exp=explode(",",$navinfor[star]);
+                                                        $count=count($exp);
+                                                        for($i=0;$i<$count;$i++)
+                                                        {?>
+                                                            <a class="name-cast" href="/e/search/?searchget=1&show=star&tbname=movie&tempid=1&keyboard=<?=$exp[$i]?>">
+                                            <span itemprop="actor" class="releated-people-tags" itemscope itemtype="http://schema.org/Person">
+                                                <span itemprop="name" ><?=$exp[$i]?></span></span>
+                                                            </a>
+                                                            <?
+                                                        }
+                                                        ?>
+                                                    </div>
+
+                                                </div>
+
+                                            <?}?>
+                                        </div>
+                                    </div>
+                                    <div class="modal-close modal-close-cross"></div>
+                                </div>
+                            </div>
+                        </div>
                     <?php
-                            if (count($mv_720) > 0) {
+/*                            if (count($mv_720) > 0) {
                                 echo '<a class="tag-transparent type--italic" href="#720p">720P</a>';
-                            }?>
+                            }*/?><!--
                             <?php
-                            if (count($mv_1080) > 0) {
+/*                            if (count($mv_1080) > 0) {
                                 echo '<a class="tag-transparent type--italic" href="#1080p">1080P</a>';
-                            }?>
+                            }*/?>
                             <?php
-                            if (count($mv_blueray) > 0) {
+/*                            if (count($mv_blueray) > 0) {
                                 echo '<a class="tag-transparent type--italic" href="#bluray">蓝光</a>';
-                            }?>
+                            }*/?>
                             <?php
-                            if (count($mv_3d) > 0) {
+/*                            if (count($mv_3d) > 0) {
                                 echo '<a class="tag-transparent type--italic" href="#3d">3D</a>';
-                            }?>
-                            <?php
-                            if (count($mv_other) > 0) {
+                            }*/?>
+                            --><?php
+/*                            if (count($mv_other) > 0) {
                                 echo '<a class="tag-transparent type--italic" href="#other">普清</a>';
-                            }?>
+                            }*/?>
                     </div>
                 </div>
                 <div class="col-md-4">
@@ -268,42 +345,79 @@
     </div>
 </section>-->
 
+
+
+
 <section class="text-center bg--dark"  style="position: relative;z-index: 9;background:#1a151c;padding-top: 1em">
     <div class="container">
         <div class="row">
             <div class="col-md-10 boxed bg--secondary" style="background: rgba(0, 0, 0, 0.08);">
                 <div class="tabs-container" data-content-align="left">
                     <ul class="tabs">
-                        <li class="active">
+                        <?php
+                        if (count($mv_720) > 0) {
+                        print <<< EOT
+                        <li>
                             <div class="tab__title text-center">
-                                <i class="icon icon--sm block icon-Cloud"></i>
-                                <span class="h5">影片资源</span>
+                                  <span class="h5">720P</span>
                             </div>
-
                         </li>
-                        <li class="">
-                            <div class="tab__title text-center">
-                                <i class="icon icon--sm block icon-Text-Effect"></i>
-                                <span class="h5">字幕资源</span>
-                            </div>
+EOT;
+                        }?>
+                        <?php
+                        if (count($mv_1080) > 0) {
+                            print <<< EOT
+<li>
+    <div class="tab__title text-center">
+          <span class="h5">1080P</span>
+    </div>
+</li>
+EOT;
+                        }?>
 
-                        </li>
-                        <li class="">
-                            <div class="tab__title text-center">
-                                <i class="icon icon--sm block icon-Love-User"></i>
-                                <span class="h5">演员信息</span>
-                            </div>
+                        <?php
+                        if (count($mv_blueray) > 0) {
+                            print <<< EOT
+<li>
+    <div class="tab__title text-center">
+          <span class="h5">蓝光</span>
+    </div>
+</li>
+EOT;
+                        }?>
 
-                        </li>
+                        <?php
+                        if (count($mv_3d) > 0) {
+                            print <<< EOT
+<li>
+    <div class="tab__title text-center">
+          <span class="h5">3d</span>
+    </div>
+</li>
+EOT;
+                        }?>
+
+                        <?php
+                        if (count($mv_other) > 0) {
+                            print <<< EOT
+<li>
+    <div class="tab__title text-center">
+          <span class="h5">其他画质</span>
+    </div>
+</li>
+EOT;
+                        }?>
+
+
+
                     </ul>
                     <ul class="tabs-content">
-                        <li class="active">
-                            <div class="tab__content">
-
                                 <?php
                                 if (count($mv_720) > 0) {
 
                                     print <<< EOT
+                                    <li>
+                            <div class="tab__content">
 <div class="picture-container">
 <div id="720p" class="picture-title type--bold">720P</div>
 EOT;
@@ -331,13 +445,15 @@ EOT;
                                         </div>
 
                                     <?	}
-                                    echo "</div>";
+                                    echo "</div></div></li>";
                                 }?>
 
                                 <?php
                                 if (count($mv_1080) > 0) {
 
                                     print <<< EOT
+                                     <li>
+                            <div class="tab__content">
 <div class="picture-container">
 <div id="1080p" class="picture-title type--bold">1080P</div>
 EOT;
@@ -364,7 +480,7 @@ EOT;
                                         </div>
 
                                     <?	}
-                                    echo "</div>";
+                                    echo "</div></div></li>";
                                 }?>
 
 
@@ -372,6 +488,8 @@ EOT;
                                 if (count($mv_blueray) > 0) {
 
                                     print <<< EOT
+                                     <li>
+                            <div class="tab__content">
 <div class="picture-container">
 <div id="bluray" class="picture-title type--bold">蓝光</div>
 EOT;
@@ -398,7 +516,7 @@ EOT;
                                         </div>
 
                                     <?	}
-                                    echo "</div>";
+                                    echo "</div></div></li>";
                                 }?>
 
 
@@ -406,6 +524,8 @@ EOT;
                                 if (count($mv_3d) > 0) {
 
                                     print <<< EOT
+                                     <li>
+                            <div class="tab__content">
 <div class="picture-container">
 <div id="3d" class="picture-title type--bold">3D</div>
 EOT;
@@ -433,13 +553,15 @@ EOT;
                                         </div>
 
                                     <?	}
-                                    echo "</div>";
+                                    echo "</div></div></li>";
                                 }?>
 
                                 <?php
                                 if (count($mv_other) > 0) {
 
                                     print <<< EOT
+                                     <li>
+                            <div class="tab__content">
 <div class="picture-container">
 <div id="other" class="picture-title type--bold">普清/HDTV/HDRIP/DVDRIP/TS/CAM/HC/DVDSCR</div>
 EOT;
@@ -467,150 +589,8 @@ EOT;
                                         </div>
 
                                     <?	}
-                                    echo "</div>";
+                                    echo "</div></div></li>";
                                 }?>
-
-
-
-
-                            </div>
-                        </li>
-
-                        <li class="">
-                            <div class="tab__content">
-                                <table cellpadding="0" cellspacing="0" class="data" style="width: 100%;border: 1px solid #666;">
-                                    <tbody><tr class="firstr">
-
-                                        <th class="width75perc">资源名</th>
-                                        <th class="lasttd nobr center">格式</th>
-                                    </tr>
-                                    <?php
-                                    $i=0;
-                                    $newbook=$empire->query("select * from www_92game_net_ecms_subs  where douban_id = '".$navinfor[douban_id]."' order by newstime desc");
-                                    while($r=$empire->fetch($newbook)) {
-                                    $i=$i+1;
-                                    ?>
-                                    <tr class="<?if($i%2==1){?>odd<?}else{?>even2<?}?>">
-
-                                        <td class="nobr">
-                                            <a  href="/sub/<?=$r[id]?>.html" class="torrent-title" style="color: #3f96ec;" target="_blank"><?=$r[title]?></a>
-                                        </td>
-                                        <td class="nobr center"><span class="tag-sm tag-picture2"><?=$r[format]?></span></td>
-                                        <?php
-                                        }
-                                        ?>
-                                    </tbody>
-                                </table>
-
-
-
-                            </div>
-                        </li>
-                        <li class="">
-                            <div class="tab__content">
-                                <div class="container">
-
-
-                                    <?if ($navinfor[director]){?>
-                                        <div class="directors">
-                                            <span class="type--bold">导演：</span>
-                                            <div class="tag-box">
-                                                <?
-                                                $exp=explode(",",$navinfor[director]);
-                                                $count=count($exp);
-                                                for($i=0;$i<$count;$i++)
-                                                {?>
-
-
-
-                                                    <a class="name-cast" href="/e/search/?searchget=1&show=director&tbname=movie&tempid=1&keyboard=<?=$exp[$i]?>" target="_blank">
-                                            <span itemprop="director" class="releated-people-tags" itemscope itemtype="http://schema.org/Person">
-                                                <span itemprop="name" ><?=$exp[$i]?></span>
-                                            </span>
-                                                    </a>
-
-
-
-                                                    <?
-                                                }
-                                                ?>
-
-                                            </div>
-
-                                        </div>
-
-
-                                    <?}?>
-
-
-
-
-
-
-                                    <?if ($navinfor[screenwriter]){?>
-                                        <div class="directors" style="margin-top: 12px">
-                                            <span class="type--bold">编剧：</span>
-                                            <div class="tag-box">
-                                                <?
-                                                $exp=explode(",",$navinfor[screenwriter]);
-                                                $count=count($exp);
-                                                for($i=0;$i<$count;$i++)
-                                                {?>
-
-
-                                                    <a class="name-cast" href="/e/search/?searchget=1&show=screenwriter&tbname=movie&tempid=1&keyboard=<?=$exp[$i]?>" target="_blank">
-                                            <span itemprop="director" class="releated-people-tags" itemscope itemtype="http://schema.org/Person">
-                                            <span itemprop="name" ><?=$exp[$i]?></span>
-                                            </span>
-                                                    </a>
-
-
-                                                    <?
-                                                }
-                                                ?>
-
-                                            </div>
-
-                                        </div>
-
-
-                                    <?}?>
-
-
-
-                                    <?if ($navinfor[star]){?>
-                                        <div class="directors" style="margin-top: 12px">
-                                            <span class="type--bold">主演：</span>
-                                            <div class="tag-box">
-                                                <?
-                                                $exp=explode(",",$navinfor[star]);
-                                                $count=count($exp);
-                                                for($i=0;$i<$count;$i++)
-                                                {?>
-
-
-                                                    <a class="name-cast" href="/e/search/?searchget=1&show=star&tbname=movie&tempid=1&keyboard=<?=$exp[$i]?>">
-                                            <span itemprop="actor" class="releated-people-tags" itemscope itemtype="http://schema.org/Person">
-                                                <span itemprop="name" ><?=$exp[$i]?></span></span>
-                                                    </a>
-
-
-
-
-                                                    <?
-                                                }
-                                                ?>
-                                            </div>
-
-                                        </div>
-
-                                    <?}?>
-
-
-
-                                </div>
-                            </div>
-                        </li>
                     </ul>
                 </div>
                 <!--end of tabs container-->

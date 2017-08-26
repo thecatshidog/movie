@@ -4,5 +4,10 @@
     $("img.lazy").lazyload({
         threshold : 200
     });
+
+    $(".tabs li:first").addClass("active")
+
+    $(".tabs-content li:first").addClass("active")
+
 </script>
 <script src="//cdn.bt0.com/js/bundle.min.js"></script>

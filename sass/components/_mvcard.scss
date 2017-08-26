@@ -29,13 +29,13 @@
   margin-bottom: .6em;
 }
 .summary-card {
-  background: #392d3e;
+  background: #372d42;
   border-radius: 6px;
   padding: 20px;
   transition: all 0.3s;
 }
 .summary-card:hover {
-  background: #372d42;
+  background: #392d3e;
 }
 .summary-title {
    font-size: 2em;
@@ -55,7 +55,7 @@
 .torrent-nav {
   margin-top: 1.4em;
   border-bottom: 4px solid rgba(152, 89, 156, 0.4);
-  padding-bottom: 1.6em;
+  padding-bottom: 2em;
 }
 
 .a_show_full {
