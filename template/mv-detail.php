@@ -161,9 +161,7 @@
                 </div>
                 <div class="col-md-4" style="margin-bottom:2em">
                     <span class="info-title">[!--title--]</span><br>
-                    <div class="modal-instance">
-                        <a class="modal-trigger" href="#" data-modal-index="2">
-                            <span class="tiny-title">豆瓣评分: <span style="font-size: 2em;font-weight: 700;color:#fc9b35;" >  <?php
+                    <span class="tiny-title">豆瓣评分: <span style="font-size: 2em;font-weight: 700;color:#fc9b35;" >  <?php
                                     $score=$empire->query("select score from www_92game_net_ecms_addinfo  where douban_id = '".$navinfor[douban_id]."' ");
                                     $r=$empire->fetch($score);
                                     if ($r) {
@@ -172,16 +170,8 @@
                                         echo "<span style='font-size: 0.6em;color: #cea588;font-weight: normal;'>同步评分数据中...</span>";
                                     }
                                     ?></span></span>
-                        </a>
-                        <div class="modal-container" data-modal-index="2">
-                            <div class="modal-content">
-                                <div class="boxed boxed--lg">
-                                    <h2>[!--title--] 的豆瓣评分详情</h2>
-                                    <div id="c1"></div>
-                                </div>
-                                <div class="modal-close modal-close-cross"></div></div>
-                        </div>
-                    </div>
+
+
                     <?if ($navinfor[ename]){?><span class="tiny-title">又名: [!--ename--]</span><?}?>
                     <?if ($navinfor[pubdate]){?><span class="tiny-title">上映日期: [!--pubdate--]</span><?}?>
                     <?if ($navinfor[type]){?><span class="tiny-title">类型: [!--type--]</span><?}?>
@@ -268,10 +258,21 @@
                                 </div>
                             </div>
                         </div>
-                    <?php
+                        <div class="modal-instance">
+                            <a class="modal-trigger tag-transparent" href="#" data-modal-index="2">查看豆瓣评分图表</a>
+                            <div class="modal-container" data-modal-index="2">
+                                <div class="modal-content">
+                                    <div class="boxed boxed--lg">
+                                        <h2>[!--title--] 的豆瓣评分详情</h2>
+                                        <div id="c1"></div>
+                                    </div>
+                                    <div class="modal-close modal-close-cross"></div></div>
+                            </div>
+                        </div>
+<!--                    <?php
 /*                            if (count($mv_720) > 0) {
                                 echo '<a class="tag-transparent type--italic" href="#720p">720P</a>';
-                            }*/?><!--
+                            }*/?>
                             <?php
 /*                            if (count($mv_1080) > 0) {
                                 echo '<a class="tag-transparent type--italic" href="#1080p">1080P</a>';
@@ -615,7 +616,7 @@ EOT;
     echo "var did =".$navinfor[douban_id]."\;";
     ?>
     $.ajax({
-        url:'https://www.bt0.com/api/rank.php?douban_id='+ did,
+        url:'/api/rank.php?douban_id='+ did,
         type:'get',
         data:{},
         async : true,
